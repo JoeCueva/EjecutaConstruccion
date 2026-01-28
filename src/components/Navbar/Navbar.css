@@ -1,0 +1,514 @@
+:root {
+    --main_overall_color_primary: #3e3e3d;
+    --main_overall_color_secundary: #ee0613;
+    --main_overall_color_tertiary: #ffffff;
+    --main_overall_color_quaternary: #131313;
+    --main_overall_color_quinary: #131313de;
+}
+
+:root {
+    --glass_red_base: rgba(238, 6, 19, 0.18);
+    --glass_red_soft: rgba(238, 6, 19, 0.12);
+    --glass_red_border: rgba(238, 6, 19, 0.35);
+    --glass_blur_strength: blur(10px);
+}
+
+@font-face {
+    font-family: 'mainText';
+    src: url('../../assets/fonts/Parkinsans-Medium.ttf');
+}
+
+/*****************************************************************************************************/
+/************************************** SECCION DE TOP_UTILITY  **************************************/
+/*****************************************************************************************************/
+
+.top_utility_information_bar_container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main_overall_color_tertiary);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 100px;
+}
+
+.top_utility_information_bar_container.hidden {
+    opacity: 0;
+    padding: 0;
+}
+
+.top_utility_information_bar_layout_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    font-family: 'mainText';
+    font-size: 12px;
+    position: relative;
+
+}
+
+.top_utility_contact_information_group {
+    display: flex;
+    gap: 25px;
+    color: var(--main_overall_color_quaternary);
+}
+
+.top_utility_contact_item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 3px;
+    color: var(--main_overall_color_quaternary);
+}
+
+.top_utility_contact_item:hover {
+    color: var(--main_overall_color_secundary);
+    transition: 0.3s all ease-in-out;
+}
+
+.top_utility_social_media_group {
+    display: flex;
+    gap: 15px;
+}
+
+.top_utility_social_media_group .top_utility_social_media_link {
+    color: var(--main_overall_color_secundary);
+    font-size: 18px;
+    transition: all 0.3s ease;
+    padding: 3px;
+    opacity: 70%;
+}
+
+.top_utility_social_media_group .top_utility_social_media_link:hover {
+    color: var(--main_overall_color_secundary);
+    transform: scale(1.1);
+}
+
+/*****************************************************************************************************/
+/**************************************** SECCION BACKGROUND  ****************************************/
+/*****************************************************************************************************/
+
+.application_global_header_layout_wrapper {
+    font-family: 'mainText';
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    padding-top: 100px;
+}
+
+/*****************************************************************************************************/
+/**************************************** SECCION DE NAVBAR  *****************************************/
+/*****************************************************************************************************/
+
+.primary_navigation_header_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 40px 60px;
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.4s ease-in-out;
+    background: transparent;
+    animation: navbarFadeIn 0.5s ease-in-out;
+}
+
+@keyframes navbarFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.primary_navigation_header_container.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 8px 60px;
+
+}
+
+.primary_navigation_header_container.scrolled .navigation_brand_indetity_image_asset {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.primary_navigation_header_container.scrolled .navigation_menu_link_element {
+    color: var(--main_overall_color_primary);
+}
+
+.primary_navigation_header_container.scrolled .navigation_menu_list_with_indicator {
+    color: var(--main_overall_color_primary);
+}
+
+.primary_navigation_header_container.scrolled .navigation_menu_link_element:hover {
+    color: var(--main_overall_color_secundary);
+}
+
+.primary_navigation_header_container.scrolled .navigation_submenu_dropdown_panel_container {
+    background: var(--main_overall_color_tertiary);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.primary_navigation_header_container.scrolled .navigation_submenu_link_element {
+    color: var(--main_overall_color_quaternary);
+}
+
+.primary_navigation_header_container.scrolled .navigation_submenu_link_element:hover {
+    background-color: rgba(238, 6, 19, 0.08);
+    color: var(--main_overall_color_secundary);
+}
+
+.primary_navigation_header_container.scrolled .navigation_submenu_link_element::before {
+    background-color: var(--main_overall_color_secundary);
+}
+
+.primary_navigation_header_container.scrolled .navigation_submenu_dropdown_panel_container::before {
+    border-bottom-color: rgba(255, 255, 255, 0.98);
+}
+
+.primary_navigation_flex_distribution_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation_brand_identity_container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation_brand_indetity_image_asset {
+    width: 100px;
+    margin-top: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.navigation_menu_interactive_container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation_menu_list_structure {
+    display: flex;
+    gap: 50px;
+    font-size: 13px;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.navigation_menu_link_element {
+    color: var(--main_overall_color_tertiary);
+    text-decoration: none;
+}
+
+.navigation_menu_list_item .navigation_menu_link_element:hover {
+    color: #eeeeeec2;
+    transition: all 0.3s;
+}
+
+.navigation_menu_list_item_with_dropdown {
+    position: relative;
+}
+
+.navigation_menu_list_with_indicator {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: var(--main_overall_color_tertiary);
+}
+
+.navigation_submenu_dropdown_panel_container {
+    position: absolute;
+    top: calc(120% + 5px);
+    left: 110%;
+    transform: translateX(-50%);
+    min-width: 280px;
+    padding: 18px 0;
+    border-radius: 10px;
+    border: 2px solid var(--main_overall_color_quinary);
+    z-index: 999;
+    animation: dropdownFloatingFade 0.35s ease forwards;
+}
+
+.navigation_submenu_dropdown_panel_container::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 55%;
+    transform: translateX(-350%);
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid rgba(34, 33, 33, 0.178);
+    filter: blur(0.2px);
+}
+
+.navigation_submenu_list_item {
+    list-style: none;
+}
+
+.navigation_submenu_link_element {
+    display: block;
+    padding: 12px 28px;
+    font-size: 13px;
+    color: var(--main_overall_color_tertiary);
+    text-decoration: none;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+.navigation_submenu_link_element:hover {
+    background-color: var(--glass_red_soft);
+    color: var(--main_overall_color_tertiary);
+    padding-left: 34px;
+}
+
+.navigation_submenu_link_element::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 60%;
+    background-color: var(--main_overall_color_tertiary);
+    transition: width 0.25s ease;
+}
+
+.navigation_submenu_link_element:hover::before {
+    width: 4px;
+}
+
+
+.top_utility_contact_information_group .top_utility_contact_item i {
+    opacity: 80%;
+}
+
+.navigation_menu_interactive_container .navigation_menu_list_structure .navigation_menu_list_item i {
+    opacity: 40%;
+}
+
+@keyframes dropdownFloatingFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.navigation_menu_toggle_action_container {
+    display: none;
+}
+
+.navigation_menu_toggle_interaction_button {
+    background-color: var(--main_overall_color_quinary);
+    backdrop-filter: blur(6px);
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid var(--main_overall_color_quaternary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+
+.navigation_menu_toggle_icon_structure {
+    width: 26px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navigation_menu_toggle_icon_structure span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--main_overall_color_tertiary);
+    border-radius: 10px;
+    transition: all .35s ease-in-out;
+    position: absolute;
+    left: 0;
+}
+
+.navigation_menu_toggle_icon_structure span:nth-child(1) {
+    top: 0;
+}
+
+.navigation_menu_toggle_icon_structure span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navigation_menu_toggle_icon_structure span:nth-child(3) {
+    bottom: 0;
+}
+
+.navigation_menu_toggle_interaction_button.active .navigation_menu_toggle_icon_structure span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    background: var(--main_overall_color_secundary);
+}
+
+.navigation_menu_toggle_interaction_button.active .navigation_menu_toggle_icon_structure span:nth-child(2) {
+    opacity: 0;
+    transform: translateY(-50%) translateX(-20px);
+}
+
+.navigation_menu_toggle_interaction_button.active .navigation_menu_toggle_icon_structure span:nth-child(3) {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    background: var(--main_overall_color_secundary);
+}
+
+.navigation_menu_toggle_interaction_button.active {
+    background-color: var(--main_overall_color_quaternary);
+    border-color: var(--main_overall_color_quinary);
+}
+
+.navigation_menu_toggle_interaction_button.active:hover {
+    border-color: var(--main_overall_color_secundary);
+}
+
+/*****************************************************************************************************/
+/********************************* SECCION DE NAVBAR MEDIA CELULAR  **********************************/
+/*****************************************************************************************************/
+
+@media (max-width: 768px) {
+    .navigation_menu_toggle_action_container {
+        display: block;
+        z-index: 1001;
+    }
+
+    .navigation_menu_link_element {
+        color: var(--main_overall_color_tertiary);
+    }
+
+    .navigation_menu_list_element {
+        color: var(--main_overall_color_tertiary);
+    }
+
+    .navigation_menu_interactive_container {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--main_overall_color_quaternary);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 100px;
+        transition: right 0.4s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+    }
+
+    .navigation_menu_interactive_container.navigation_menu_state_expanded {
+        right: 0;
+    }
+
+    .navigation_menu_list_structure {
+        flex-direction: column;
+        gap: 0;
+        width: 90%;
+        margin: 120px 20px 0 20px;
+    }
+
+    .navigation_menu_list_item {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navigation_menu_link_element {
+        display: block;
+        padding: 15px 25px;
+        width: 100%;
+    }
+
+    .navigation_menu_list_item_with_dropdown {
+        position: relative;
+    }
+
+    .navigation_menu_list_with_indicator {
+        display: flex;
+        padding: 15px 25px;
+        width: 100%;
+        color: var(--main_overall_color_tertiary);
+    }
+
+    .navigation_menu_list_with_indicator i {
+        transition: transform 0.3s ease;
+    }
+
+    .navigation_menu_list_item_with_dropdown.mobile-submenu-open .navigation_menu_list_with_indicator i {
+        transform: rotate(180deg);
+    }
+
+    .navigation_submenu_dropdown_panel_container {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border-radius: 0;
+        min-width: auto;
+        width: 100%;
+        padding: 0;
+        background-color: var(--main_overall_color_quinary);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        animation: none;
+    }
+
+    .navigation_menu_list_item_with_dropdown.mobile-submenu-open .navigation_submenu_dropdown_panel_container {
+        max-height: 300px;
+    }
+
+    .navigation_submenu_dropdown_panel_container::before {
+        display: none;
+    }
+
+    .navigation_submenu_link_element {
+        color: var(--main_overall_color_tertiary);
+        padding: 15px 25px 15px 45px;
+        font-size: 14px;
+    }
+
+    .navigation_submenu_link_element:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding-left: 50px;
+    }
+
+    .navigation_submenu_link_element::before {
+        left: 28px;
+    }
+}

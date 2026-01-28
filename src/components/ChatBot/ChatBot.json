@@ -1,0 +1,28 @@
+{
+  "welcome": "Hola, soy el asistente virtual de EJECUTA. ¿En qué puedo ayudarte hoy?",
+  "options": [
+    {
+      "label": "¿Qué es EJECUTA?",
+      "value": "about"
+    },
+    {
+      "label": "Nuestros servicios",
+      "value": "services"
+    },
+    {
+      "label": "Solicitar cotización",
+      "value": "quote"
+    },
+    {
+      "label": "Contacto",
+      "value": "contact"
+    }
+  ],
+  "responses": {
+    "about": "EJECUTA es una empresa de ingeniería especializada en instalaciones técnicas, enfocada en calidad, seguridad y cumplimiento de plazos.",
+    "services": "Brindamos: Instalaciones Eléctricas (IIEE), Instalaciones Sanitarias (IISS), Sistemas Contra Incendios (ACI) y Comunicaciones.",
+    "quote": "Completa el formulario y nuestro equipo se comunicará contigo.",
+    "contact": "Puedes contactarnos directamente vía WhatsApp al +51 987 654 321 o a través de nuestra web."
+  },
+  "whatsapp": "+930666328"
+}

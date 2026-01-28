@@ -1,0 +1,200 @@
+:root {
+    --main_overall_color_primary: #3e3e3d;
+    --main_overall_color_secundary: #ee0613;
+    --main_overall_color_tertiary: #ffffff;
+    --main_overall_color_quaternary: #131313;
+    --main_overall_color_quinary: #131313de;
+    --main_overall_color_senary: #cccccc;
+}
+
+@font-face {
+    font-family: 'mainText';
+    src: url('../../assets/fonts/Parkinsans-Medium.ttf');
+}
+
+.chatbot-button {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--main_overall_color_secundary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+    font-size: 24px;
+    color: #fff;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.chatbot-wrapper {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+    overflow: hidden;
+    font-family: 'mainText';
+}
+
+.chatbot-sidebar {
+    width: 200px;
+    background: var(--main_overall_color_primary);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+    color: #fff;
+}
+
+.sidebar-option {
+    background: var(--main_overall_color_secundary);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sidebar-option:hover {
+    background: #c5050f;
+}
+
+.sidebar-whatsapp {
+    margin-top: auto;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    background: #25d366;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.sidebar-whatsapp:hover {
+    background: #1ebe5d;
+}
+
+.chatbot-container {
+    flex: 1;
+    background: var(--main_overall_color_tertiary);
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    padding: 16px;
+    background: var(--main_overall_color_secundary);
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatbot-body {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background: #fafafa;
+}
+
+.chat-message {
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 14px;
+    max-width: 85%;
+    animation: fadeInUp 0.3s ease;
+}
+
+.chat-message.bot {
+    background: #f4f4f4;
+    color: #111;
+}
+
+.chat-message.user {
+    background: var(--main_overall_color_secundary);
+    color: #fff;
+    margin-left: auto;
+}
+
+.typing {
+    font-size: 12px;
+    color: var(--main_overall_color_quinary);
+}
+
+.chatbot-footer {
+    padding: 16px;
+    border-top: 1px solid #eee;
+}
+
+.chat-form input,
+.chat-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--main_overall_color_senary);
+    font-family: 'mainText';
+}
+
+.chat-submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    background: var(--main_overall_color_secundary);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.chat-submit:hover {
+    background: #c5050f;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

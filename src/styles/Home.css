@@ -1,0 +1,905 @@
+:root {
+    --main_overall_color_primary: #3e3e3d;
+    --main_overall_color_secundary: #ee0613;
+    --main_overall_color_tertiary: #ffffff;
+    --main_overall_color_quaternary: #131313;
+    --main_overall_color_quinary: #131313de;
+    --main_overall_color_sextuple: #ffffffb4;
+}
+
+@font-face {
+    font-family: 'mainText';
+    src: url('../../assets/fonts/Parkinsans-Medium.ttf');
+}
+
+/*****************************************************************************************************/
+/************************************** SECCION COMO TRABAJAMOS  *************************************/
+/*****************************************************************************************************/
+
+.certainty_section {
+    position: relative;
+    padding: 7rem 1.5rem;
+    font-family: 'mainText';
+    overflow: hidden;
+}
+
+.certainty_background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.certainty_container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 5rem;
+    z-index: 2;
+}
+
+.certainty_tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--main_overall_color_secundary);
+    margin-bottom: 1rem;
+}
+
+.certainty_text h2 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--main_overall_color_quaternary);
+    margin-bottom: 1.5rem;
+}
+
+.certainty_intro {
+    max-width: 520px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--main_overall_color_primary);
+    margin-bottom: 3rem;
+}
+
+.certainty_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.certainty_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.certainty_icon {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--main_overall_color_secundary);
+    min-width: 40px;
+}
+
+.certainty_item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--main_overall_color_primary);
+}
+
+.certainty_visual {
+    position: relative;
+    margin-top: 45px;
+    height: 420px;
+}
+
+.certainty_image {
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.certainty_image.primary {
+    width: 320px;
+    height: 350px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.certainty_image.secondary {
+    width: 260px;
+    height: 285px;
+    bottom: 0;
+    left: 0;
+    background: var(--main_overall_color_quaternary);
+    z-index: 2;
+}
+
+.certainty_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .certainty_container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .certainty_visual {
+        height: 320px;
+    }
+}
+
+/*****************************************************************************************************/
+/***************************** SECCION MANIFIESTO INICIAL DE LA MARCA ********************************/
+/*****************************************************************************************************/
+
+.brand_hero_background_banner_section_wrapper {
+    width: 100%;
+    height: 69vh;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'mainText';
+}
+
+.brand_hero_background_banner_overlay_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: flex-end;
+}
+
+.brand_hero_background_banner_content_alignment {
+    max-width: 800px;
+    padding: 6%;
+    padding-left: 0;
+    color: var(--main_overall_color_tertiary);
+    animation: brandHeroFadeInUp 1s ease forwards;
+    text-align: right;
+}
+
+.brand_hero_background_banner_main_heading {
+    font-size: 33px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    letter-spacing: 0.6px;
+    color: var(--main_overall_color_secundary);
+}
+
+.brand_hero_background_banner_supporting_description {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 620px;
+    text-align: justify;
+    margin-left: auto;
+    color: var(--main_overall_color_primary);
+}
+
+.brand_hero_background_banner_action_group {
+    margin-top: 40px;
+}
+
+.brand_hero_background_banner_primary_action {
+    padding: 14px 36px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: 'mainText';
+    background-color: var(--main_overall_color_secundary);
+    color: var(--main_overall_color_tertiary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.brand_hero_background_banner_primary_action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+
+@keyframes brandHeroFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*****************************************************************************************************/
+/*********************************** SECCION METODOLOGIA EJECUTA *************************************/
+/*****************************************************************************************************/
+
+.container_section_info {
+    width: 100%;
+    display: flex;
+    padding: 50px 60px;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.container_section_info_left {
+    flex: 1.2;
+    font-family: 'mainText';
+}
+
+.container_section_info_title {
+    font-size: 42px;
+    margin-bottom: 22px;
+    color: var(--main_overall_color_quaternary);
+}
+
+.container_section_info_desc {
+    font-size: 15px;
+    color: var(--main_overall_color_primary);
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.container_section_info_btn {
+    padding: 14px 15px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: 'mainText';
+
+    background-color: var(--main_overall_color_secundary);
+    color: var(--main_overall_color_tertiary);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container_section_info_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.20);
+}
+
+.container_section_info_right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: 'mainText';
+}
+
+.container_section_info_item {
+    border: 2px solid var(--main_overall_color_primary);
+    padding: 14px 16px;
+    border-radius: 6px;
+    background: var(--main_overall_color_tertiary);
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.container_section_info_item:hover {
+    transform: translateX(4px);
+}
+
+.container_section_info_item_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.container_section_info_item_header i {
+    transition: 0.4s ease;
+}
+
+.container_section_info_item_content {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+    animation: fadeIn 0.35s ease forwards;
+}
+
+.container_section_info_item.active {
+    background: var(--main_overall_color_secundary);
+    color: var(--main_overall_color_tertiary);
+}
+
+.container_section_info_item.active .container_section_info_item_header i {
+    transform: rotate(90deg);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal_section,
+.reveal_up,
+.reveal_right {
+    opacity: 0;
+    transform: translateY(48px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal_right {
+    transform: translateX(48px);
+}
+
+.reveal_show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/*****************************************************************************************************/
+/************************************ SECCION DE ALGUNOS CLIENTES ************************************/
+/*****************************************************************************************************/
+
+.enterprise_level_client_trust_validation_section_wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+}
+
+.enterprise_level_client_trust_validation_section_container {
+    width: 100%;
+    height: 100%;
+}
+
+.enterprise_level_client_trust_validation_logos_grid_container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.enterprise_level_client_trust_validation_logo_item_container {
+    width: 180px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    opacity: 0.8;
+    filter: grayscale(100%);
+}
+
+.enterprise_level_client_trust_validation_logo_item_container .enterprise_level_client_trust_validation_logo_image_element {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.enterprise_level_client_trust_validation_logo_item_container:hover {
+    transform: scale(1.07);
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+/*****************************************************************************************************/
+/************************************ SECCION DE SERVICIOS EJECUTA ***********************************/
+/*****************************************************************************************************/
+
+.brand_multidisciplinary_installation_capabilities_section_wrapper {
+    position: relative;
+    width: 100%;
+    /* height: 90vh; */
+    padding: 50px 60px;
+    text-align: center;
+    font-family: 'mainText';
+    overflow: hidden;
+    color: var(--main_overall_color_tertiary);
+}
+
+.brand_multidisciplinary_installation_capabilities_container_intro_card {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.brand_multidisciplinary_installation_capabilities_intro_container {
+    grid-column: 1 / -1;
+    margin-bottom: 40px;
+}
+
+.brand_multidisciplinary_installation_capabilities_intro_title {
+    font-size: 2.2rem;
+    color: var(--main_overall_color_quaternary);
+}
+
+.brand_multidisciplinary_installation_capabilities_intro_description {
+    font-size: 1rem;
+    margin-top: 12px;
+    color: var(--main_overall_color_primary);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand_multidisciplinary_installation_capabilities_item_card {
+    position: relative;
+    overflow: hidden;
+    /* background: rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 42px 28px;
+    border-radius: 15px;
+    border: 2px solid var(--main_overall_color_quaternary);
+    transition: 0.35s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); */
+}
+
+.brand_multidisciplinary_installation_capabilities_item_card::before {
+    content: "";
+    position: absolute;
+    top: -140px;
+    left: -140px;
+    width: 280px;
+    height: 280px;
+    background: rgba(104, 104, 104, 0.164);
+    filter: blur(80px);
+    opacity: 0;
+    transition: 0.5s ease;
+    border-radius: 50%;
+}
+
+.brand_multidisciplinary_installation_capabilities_item_card:hover::before {
+    opacity: 1;
+    transform: translate(140px, 140px);
+}
+
+.brand_multidisciplinary_installation_capabilities_item_card:hover {
+    transform: translateY(-10px) scale(1.03);
+    background: rgba(175, 175, 175, 0.11);
+    border-color: rgba(255, 255, 255, 0.35);
+    border: 2px solid var(--main_overall_color_quaternary);
+}
+
+.brand_multidisciplinary_installation_capabilities_item_icon_image {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 22px;
+    transition: 0.35s ease;
+}
+
+.brand_multidisciplinary_installation_capabilities_item_card:hover .brand_multidisciplinary_installation_capabilities_item_icon_image {
+    transform: scale(1.18) translateY(-4px);
+}
+
+.brand_multidisciplinary_installation_capabilities_item_title {
+    font-size: 1.45rem;
+    margin-bottom: 14px;
+    color: var(--main_overall_color_quaternary);
+}
+
+.brand_multidisciplinary_installation_capabilities_item_text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--main_overall_color_quinary);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.brand_multidisciplinary_installation_capabilities_item_action_button {
+    margin-top: 22px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-family: 'mainText';
+    color: var(--main_overall_color_quaternary);
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid var(--main_overall_color_quaternary);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.brand_multidisciplinary_installation_capabilities_item_action_button:hover {
+    background: var(--main_overall_color_secundary);
+    color: var(--main_overall_color_tertiary);
+    
+}
+
+.navigation_menu_link_element_seccion_services {
+    margin-top: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-family: 'mainText';
+    color: var(--main_overall_color_quaternary);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.navigation_menu_link_element_seccion_services:hover {
+    color: var(--main_overall_color_secundary);
+}
+
+.navigation_menu_link_element_seccion_services i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.navigation_menu_link_element_seccion_services:hover i {
+    transform: translateX(4px);
+}
+
+
+/*****************************************************************************************************/
+/******************************** SECCION DE SERVICIOS MODAL EJECUTA *********************************/
+/*****************************************************************************************************/
+
+.brand_quote_modal_overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    padding: 20px;
+    pointer-events: auto;
+}
+
+.brand_quote_modal_container {
+    font-family: 'mainText';
+    width: 100%;
+    max-width: 800px;
+    background: rgb(255, 255, 255);
+    border-radius: 14px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    animation: modalFadeUp 0.35s ease;
+}
+
+.brand_quote_modal_layout {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.brand_quote_modal_service_panel {
+    padding: 40px 30px;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.brand_quote_modal_service_icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    background: var(--main_overall_color_secundary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand_quote_modal_service_icon img {
+    width: 34px;
+    filter: invert(1);
+}
+
+.brand_quote_modal_service_tag {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--main_overall_color_secundary);
+}
+
+.brand_quote_modal_service_title {
+    font-size: 1.4rem;
+    margin: 12px 0;
+    color: var(--main_overall_color_primary);
+}
+
+.brand_quote_modal_service_desc {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.brand_quote_modal_form_panel {
+    padding: 40px;
+}
+
+.form_row_double {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.brand_quote_modal_form_group {
+    margin-bottom: 16px;
+}
+
+.brand_quote_modal_form_group label {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #444;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.brand_quote_modal_form_group input,
+.brand_quote_modal_form_group textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: var(--main_overall_color_tertiary);
+    font-size: 14px;
+    color: #222;
+    transition: 0.25s;
+}
+
+.brand_quote_modal_form_group input:focus,
+.brand_quote_modal_form_group textarea:focus {
+    outline: none;
+    border-color: var(--main_overall_color_secundary);
+}
+
+.file_label_custom {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--main_overall_color_primary);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.hidden_input {
+    display: none;
+}
+
+.brand_quote_modal_form_submit_button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    background: var(--main_overall_color_secundary);
+    border: none;
+    color: var(--main_overall_color_tertiary);
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand_quote_modal_form_submit_button:hover {
+    filter: brightness(1.1);
+}
+
+.brand_quote_modal_close_button {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    color: #444;
+    cursor: pointer;
+}
+
+@keyframes modalFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .brand_quote_modal_layout {
+        grid-template-columns: 1fr;
+    }
+
+    .brand_quote_modal_service_panel {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .form_row_double {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*****************************************************************************************************/
+/*************************************** SECCION DE CTA EJECUTA***************************************/
+/*****************************************************************************************************/
+
+.enterprise_level_project_engagement_call_to_action_section {
+    position: relative;
+    height: 70vh;
+    font-family: 'mainText';
+    overflow: hidden;
+}
+
+.enterprise_level_project_engagement_call_to_action_section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: bottom;
+    transform: scaleX(-1);
+    filter: grayscale(1);
+    z-index: 1;
+}
+
+.enterprise_level_project_engagement_call_to_action_overlay_layer {
+    background-color: rgba(238, 6, 19, 0.42);
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.enterprise_level_project_engagement_call_to_action_content_container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 110px 24px 90px;
+    position: relative;
+    z-index: 3;
+}
+
+.enterprise_level_project_engagement_call_to_action_context_tag {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--main_overall_color_tertiary);
+    opacity: 0.8;
+    margin-bottom: 22px;
+}
+
+.enterprise_level_project_engagement_call_to_action_primary_heading {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--main_overall_color_sextuple);
+    margin-bottom: 26px;
+}
+
+.enterprise_level_project_engagement_call_to_action_supporting_text {
+    font-size: 17px;
+    max-width: 620px;
+    line-height: 1.65;
+    color: var(--main_overall_color_sextuple);
+    margin-bottom: 44px;
+}
+
+.enterprise_level_project_engagement_call_to_action_interactive_text_link {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main_overall_color_tertiary);
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 6px;
+    text-decoration: none;
+}
+
+.enterprise_level_project_engagement_call_to_action_interactive_text_link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main_overall_color_tertiary);
+    transition: width 0.35s ease;
+}
+
+.enterprise_level_project_engagement_call_to_action_interactive_text_link:hover::after {
+    width: 100%;
+}
+
+
+/*****************************************************************************************************/
+/*************************************** SECCION DE PROYECTOS ****************************************/
+/*****************************************************************************************************/
+
+.enterprise_project_experience_section {
+    padding: 100px 0;
+    background: transparent;
+}
+
+.enterprise_project_experience_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.enterprise_project_experience_tag {
+    display: inline-block;
+    font-family: 'mainText';
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--main_overall_color_secundary);
+    margin-bottom: 20px;
+}
+
+.enterprise_project_experience_title {
+    font-family: 'mainText';
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--main_overall_color_quinary);
+    max-width: 720px;
+    margin-bottom: 20px;
+}
+
+.enterprise_project_experience_description {
+    font-family: 'mainText';
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--main_overall_color_primary);
+    max-width: 680px;
+    margin-bottom: 64px;
+}
+
+.enterprise_project_experience_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.enterprise_project_experience_card {
+    padding: 32px 0;
+    border-top: 1px solid rgba(255, 21, 21, 0.74);
+}
+
+.enterprise_project_experience_card h3 {
+    font-family: 'mainText';
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main_overall_color_primary);
+    margin-bottom: 14px;
+}
+
+.enterprise_project_experience_card p {
+    font-family: 'mainText';
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--main_overall_color_primary);
+}

@@ -1,0 +1,279 @@
+:root {
+    --main_overall_color_primary: #3e3e3d;
+    --main_overall_color_secundary: #ee0613;
+    --main_overall_color_tertiary: #ffffff;
+    --main_overall_color_quaternary: #131313;
+    --main_overall_color_quinary: #131313de;
+    --main_overall_color_sextuple: #ffffffb4;
+}
+
+@font-face {
+    font-family: 'mainText';
+    src: url('../../assets/fonts/Parkinsans-Medium.ttf');
+}
+
+
+/* =========================
+    Enfoque principal 
+========================= */
+
+.approach_essence_section {
+    padding: 100px 20px;
+    width: 100%;
+    margin-top: -20vh;
+    /* background: url(https://plus.unsplash.com/premium_photo-1678766819153-b3f7307c5127?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    color: var(--main_overall_color_quinary);
+    font-family: 'mainText';
+    z-index: 1;
+    position: relative;
+    filter: grayscale(0.2);
+    overflow: hidden;
+}
+
+.approach_essence_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: url(https://plus.unsplash.com/premium_photo-1678766819153-b3f7307c5127?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
+    filter: grayscale(0.2);
+}
+
+.approach_essence_section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: #ffffffbf;
+}
+
+.approach_essence_wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.approach_essence_wrapper h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 28px;
+}
+
+.approach_essence_lead {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: var(--main_overall_color_quaternary);
+}
+
+.approach_essence_wrapper p {
+    font-size: 1.02rem;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.approach_essence_highlight {
+    margin-top: 40px;
+    padding-left: 24px;
+    border-left: 4px solid var(--main_overall_color_secundary);
+    font-weight: 600;
+}
+
+.approach_essence_layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.approach_essence_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+
+/* =========================
+    TEXTO RESUMEN
+========================= */
+
+.approach_criteria_section {
+    padding: 140px 20px;
+    background: #f5f5f5;
+    font-family: 'mainText';
+}
+
+.approach_criteria_layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.approach_criteria_visual {
+    /* position: sticky; */
+    top: 140px;
+}
+
+.criteria_tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--main_overall_color_secundary);
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.approach_criteria_visual h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--main_overall_color_quaternary);
+}
+
+.criteria_line {
+    width: 60px;
+    height: 4px;
+    background: var(--main_overall_color_secundary);
+    margin-top: 24px;
+}
+
+.approach_criteria_content p {
+    font-size: 1.02rem;
+    line-height: 1.8;
+    margin-bottom: 26px;
+    color: var(--main_overall_color_primary);
+}
+
+.approach_criteria_lead {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.criteria_image {
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 4px;
+    filter: grayscale(100%);
+}
+
+
+
+
+/* =========================
+   SECCION DIAGRAMA
+========================= */
+
+.approach_principles_section {
+    padding: 80px 20px;
+    /* background-color: var(--main_overall_color_secundary); */
+    font-family: 'mainText';
+    overflow: hidden;
+}
+
+.approach_principles_intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.approach_container_visual {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.approach_center_bg {
+    position: absolute;
+    z-index: 1;
+    width: 80vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+}
+
+.approach_center_bg img {
+    width: 100%;
+    height: auto;
+}
+
+.approach_principles_layout {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 150px 500px;
+    /* width: 100%; */
+}
+
+.approach_principle_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.principle_number {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--main_overall_color_secundary);
+    line-height: 1;
+    margin-bottom: -10px;
+    opacity: 0.9;
+}
+
+.principle_content h3 {
+    font-size: 1.2rem;
+    color: var(--main_overall_color_quaternary);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.principle_content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--main_overall_color_primary);
+    text-align: justify;
+}
+
+.pos_0,
+.pos_2 {
+    text-align: left;
+}
+
+.pos_1,
+.pos_3 {
+    text-align: right;
+}
+
+.pos_1 .principle_content,
+.pos_3 .principle_content {
+    align-items: flex-end;
+}

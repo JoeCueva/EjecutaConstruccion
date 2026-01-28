@@ -1,0 +1,258 @@
+:root {
+    --main_overall_color_primary: #3e3e3d;
+    --main_overall_color_secundary: #ee0613;
+    --main_overall_color_tertiary: #ffffff;
+    --main_overall_color_quaternary: #131313;
+    --main_overall_color_quinary: #131313de;
+    --main_overall_color_senary: #cccccc;
+}
+
+@font-face {
+    font-family: 'mainText';
+    src: url('../../assets/fonts/Parkinsans-Medium.ttf');
+}
+
+.footer_global_container {
+    position: relative;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main_overall_color_quaternary);
+    color: var(--main_overall_color_tertiary);
+    padding: 0 250px;
+    font-family: 'mainText';
+    z-index: 100;
+}
+
+/*****************************************************************************************************/
+/***************************************** FOOTER LOGO CASCO  ****************************************/
+/*****************************************************************************************************/
+
+.footer_background_brand_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    filter: grayscale(1.2) brightness(0.7) contrast(0.2);
+}
+
+.footer_background_brand_overlay img {
+    height: 120%;
+    opacity: 0.2;
+    filter: blur(10px);
+    position: absolute;
+    left: -50px;
+    object-fit: contain;
+}
+
+/*****************************************************************************************************/
+/******************************** SECCION DESCRIPCION - LI - CONTACTO  *******************************/
+/*****************************************************************************************************/
+
+.footer_top_section_layout {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer_column_about_section,
+.footer_column_contact_section,
+.footer_column_navigation_section {
+    margin: 30px 50px 30px 50px;
+}
+
+.footer_column_about_section h3,
+.footer_column_contact_section h3,
+.footer_column_navigation_section h3 {
+    color: var(--main_overall_color_secundary);
+    margin-bottom: 8px;
+    /* font-size: 16px; */
+    font-size: 1.0rem;
+}
+
+.footer_column_about_section p,
+.footer_column_contact_section p,
+.footer_column_navigation_section a {
+    /* font-size: 13px; */
+    font-size: 0.7rem;
+    color: var(--main_overall_color_tertiary);
+    text-decoration: none;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer_column_navigation_section ul {
+    padding-left: 20px;
+}
+
+.footer_column_navigation_section li {
+    margin-bottom: 4px;
+}
+
+.footer_column_navigation_section li a:hover {
+    color: var(--main_overall_color_senary);
+}
+
+.footer_contact_schedule_block {
+    margin-top: 20px;
+    /* font-size: 13px; */
+    font-size: 0.8rem;
+    color: var(--main_overall_color_senary);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/*****************************************************************************************************/
+/************************************** SECCION LOGOS CLIENTES  **************************************/
+/*****************************************************************************************************/
+
+.footer_partners_section {
+    text-align: center;
+    margin-top: -45px;
+}
+
+.footer_partners_title {
+    position: relative;
+    text-align: center;
+    color: var(--main_overall_color_secundary);
+    /* font-size: 16px; */
+    font-size: 1.0rem;
+    margin: 30px 0;
+}
+
+.footer_partners_title::before,
+.footer_partners_title::after {
+    content: "";
+    display: inline-block;
+    width: 35%;
+    height: 2px;
+    background-color: var(--main_overall_color_tertiary);
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.footer_partners_section h3 {
+    color: var(--main_overall_color_tertiary);
+}
+
+.footer_partners_titles {
+    position: relative;
+    text-align: center;
+    color: var(--main_overall_color_tertiary);
+    /* font-size: 16px; */
+    font-size: 1.0rem;
+    margin: 20px 0;
+}
+
+.footer_partners_titles::before,
+.footer_partners_titles::after {
+    content: "";
+    display: inline-block;
+    width: 25%;
+    height: 2px;
+    background-color: var(--main_overall_color_tertiary);
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.footer_partners_logo_grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer_partners_logo_grid img {
+    max-height: 60px;
+    filter: grayscale(100%) brightness(1.5) contrast(0.4);
+}
+
+/*****************************************************************************************************/
+/************************************** SECCION REDES SOCIALES  **************************************/
+/*****************************************************************************************************/
+
+.footer_social_section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.footer_social_icons_grid {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_social_icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main_overall_color_primary);
+    color: var(--main_overall_color_tertiary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer_social_icon:hover {
+    background-color: var(--main_overall_color_secundary);
+    transform: scale(1.1);
+    color: var(--main_overall_color_tertiary);
+}
+
+/*****************************************************************************************************/
+/************************************** SECCION LOGO EJECUTA  ****************************************/
+/*****************************************************************************************************/
+
+.footer_logo_center_block {
+    margin: 5px 0 20px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_logo_center_block img {
+    max-height: 100px;
+    width: auto;
+    object-fit: contain;
+}
+
+/*****************************************************************************************************/
+/**************************************** SECCION COPYRIGHT  *****************************************/
+/*****************************************************************************************************/
+
+.footer_bottom_rights_reserved {
+    text-align: center;
+    font-size: 12px;
+    color: var(--main_overall_color_senary);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*****************************************************************************************************/
+/*************************************** SECCION CREADOR PAGES ***************************************/
+/*****************************************************************************************************/
+
+.footer_creator_signature_block {
+    text-align: center;
+    font-size: 12px;
+    color: var(--main_overall_color_senary);
+    margin-top: 5px;
+}
+
+.footer_creator_signature_block span {
+    color: var(--main_overall_color_secundary);
+    font-weight: bold;
+}

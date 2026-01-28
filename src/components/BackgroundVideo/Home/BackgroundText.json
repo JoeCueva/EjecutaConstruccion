@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titles": [
+      "Aquí no se improvisa. Aquí se ejecuta",
+      "Ingeniería eléctrica con criterio técnico",
+      "Cuatro especialidades. Un solo estándar"
+    ],
+    "subtitle": "Precisión técnica y control en cada sistema ejecutado.",
+    "reason": "Nos ocupamos de anticipar riesgos, validar decisiones y ejecutar con control para que el sistema entregue lo que debe, sin fallas, sin retrabajos y sin estrés innecesario.",
+    "primaryBtn": "Nuestra Experiencia",
+    "secondaryBtn": "Conocer Nuestro Método"
+  },
+  {
+    "id": 2,
+    "titles": [
+      "La ingeniería bien ejecutada genera tranquilidad",
+      "Cuando el criterio técnico guía la obra, el resultado responde",
+      "Ejecución que responde desde el diseño hasta la operación"
+    ],
+    "subtitle": "Sistemas pensados para funcionar correctamente hoy y a largo plazo.",
+    "reason": "Nos ocupamos de planificar, verificar y ejecutar cada sistema con criterio técnico para que tú tengas la tranquilidad de que la obra está bien hecha y responde a tu operación.",
+    "primaryBtn": "Solicitar Cotización",
+    "secondaryBtn": "Ver Proyectos Ejecutados"
+  }
+]
