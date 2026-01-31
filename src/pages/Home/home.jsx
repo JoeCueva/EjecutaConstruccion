@@ -1,6 +1,4 @@
 import '../../styles/Home.css';
-import Navbar from '../../components/Navbar/navbar';
-import Banner from '../../assets/img/Banner.png';
 import StellaMaris from '../../assets/img/ClienteLogos/StellaMaris.png';
 import Falabella from '../../assets/img/ClienteLogos/Falabella.png';
 import Consorcio from '../../assets/img/ClienteLogos/Consorcio.png';
@@ -13,9 +11,17 @@ import IconWifi from '../../assets/icons/iconWifi.png';
 import BannerIsotipo from '../../assets/img/bannerIsotipo.png';
 import SeccionFoto1 from '../../assets/img/SeccionFoto1.jpeg';
 import SeccionFoto2 from '../../assets/img/SeccionFoto2.jpeg';
-import Footer from '../../components/Footer/footer';
 import FondoCTA from '../../assets/img/FondoCTA.jpg';
-import { useEffect, useState } from 'react';
+import edificacionFalabella from '../../assets/img/edificacionFalabella.jpg';
+import edificacionPrecio from '../../assets/img/edificacionPrecio.jpg';
+import educacionalUPN from '../../assets/img/educacionalUPN.jpg';
+import edificacionStella from '../../assets/img/edificacionStella.jpg';
+import imagenEjemplo1 from '../../assets/img/obra1.png';
+import imagenEjemplo2 from '../../assets/img/obra2.png';
+import imagenEjemplo3 from '../../assets/img/revisionTablero.png';
+import enfoqueIngenierio from '../../assets/img/enfoqueIngeniero.jpg';
+import infraTuberias from '../../assets/img/infraTuberias.jpg';
+import { use, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
@@ -24,6 +30,10 @@ const Home = () => {
     const [activeItem, setActiveItem] = useState(null);
     const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
     const [selectedService, setSelectedService] = useState(null);
+    const [activeEdificacion, setActiveEdificacion] = useState(0);
+    const [activeTecnica, setActiveTecnica] = useState(0);
+    const [activeInfra, setActiveInfra] = useState(0);
+
 
     const handleToggle = (index) => {
         setActiveItem(activeItem === index ? null : index);
@@ -116,6 +126,52 @@ const Home = () => {
     }, [isQuoteModalOpen]);
 
 
+    {/* =========== FOR CARRUSEL IMAGE EDIFICACION ============ */ }
+    const edificacionImages = [
+        edificacionFalabella,
+        edificacionPrecio,
+        educacionalUPN,
+        edificacionStella,
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveEdificacion(prev => (prev + 1) % edificacionImages.length);
+        }, 3200);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    {/* =========== FOR CARRUSEL IMAGE TECNICA ============ */ }
+    const tecnicaImages = [
+        enfoqueIngenierio,
+        imagenEjemplo2,
+        imagenEjemplo3
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveTecnica(prev => (prev + 1) % tecnicaImages.length);
+        }, 3800);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    {/* =========== FOR CARRUSEL IMAGE Infraestructura ============ */ }
+
+    const infraImages = [
+        imagenEjemplo1,
+        infraTuberias
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveInfra(prev => (prev + 1) % infraImages.length);
+        }, 4500);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <>
             {/* ================================ NAVBAR SECCION INICIO ================================ */}
@@ -201,7 +257,7 @@ const Home = () => {
             {/* ======================= SECCION MANIFIESTO INICIAL DE LA MARCA ======================== */}
 
             <section className="brand_hero_background_banner_section_wrapper"
-                // style={{ backgroundImage: `url(${Banner})` }}
+            // style={{ backgroundImage: `url(${Banner})` }}
             >
                 <div className="brand_hero_background_banner_overlay_container">
                     <div className="brand_hero_background_banner_content_alignment">
@@ -587,7 +643,6 @@ const Home = () => {
                 </div>
             )}
 
-
             {/* ============================= SECCION DE PROYECTOS EJECUTA ============================ */}
 
             <section className="enterprise_project_experience_section">
@@ -598,7 +653,7 @@ const Home = () => {
                     </span>
 
                     <h2 className="enterprise_project_experience_title">
-                        Experiencia aplicada en proyectos reales
+                        Experiencia aplicada <br /> en proyectos reales
                     </h2>
 
                     <p className="enterprise_project_experience_description">
@@ -610,6 +665,15 @@ const Home = () => {
                     <div className="enterprise_project_experience_grid">
 
                         <div className="enterprise_project_experience_card">
+                            <div className="enterprise_project_experience_image_slider">
+                                <img
+                                    key={activeEdificacion}
+                                    src={edificacionImages[activeEdificacion]}
+                                    className="enterprise_project_experience_image"
+                                />
+
+                            </div>
+
                             <h3>Edificaciones comerciales e institucionales</h3>
                             <p>
                                 Instalaciones eléctricas, sanitarias y de comunicaciones
@@ -618,6 +682,14 @@ const Home = () => {
                         </div>
 
                         <div className="enterprise_project_experience_card">
+                            <div className="enterprise_project_experience_image_slider">
+                                <img
+                                    key={activeTecnica}
+                                    src={tecnicaImages[activeTecnica]}
+                                    className="enterprise_project_experience_image"
+                                />
+                            </div>
+
                             <h3>Proyectos industriales y técnicos</h3>
                             <p>
                                 Ejecución bajo estándares de seguridad,
@@ -626,6 +698,14 @@ const Home = () => {
                         </div>
 
                         <div className="enterprise_project_experience_card">
+                            <div className="enterprise_project_experience_image_slider">
+                                <img
+                                    key={activeInfra}
+                                    src={infraImages[activeInfra]}
+                                    className="enterprise_project_experience_image"
+                                />
+                            </div>
+
                             <h3>Obras de infraestructura y ampliaciones</h3>
                             <p>
                                 Intervenciones planificadas para asegurar continuidad operativa

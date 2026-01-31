@@ -1,0 +1,101 @@
+:root {
+    --main_overall_color_primary: #3e3e3d;
+    --main_overall_color_secundary: #ee0613;
+    --main_overall_color_tertiary: #ffffff;
+    --main_overall_color_quaternary: #131313;
+    --main_overall_color_quinary: #131313de;
+    --main_overall_color_sextuple: #ffffffb4;
+}
+
+@font-face {
+    font-family: 'mainText';
+    src: url('../../assets/fonts/Parkinsans-Medium.ttf');
+}
+
+
+
+/* =========================
+    TEXTO RESUMEN
+========================= */
+
+.approach_criteria_section {
+    padding: 10px 20px;
+    font-family: 'mainText';
+}
+
+.approach_criteria_layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.approach_criteria_visual {
+    top: 140px;
+}
+
+.criteria_key {
+    margin-top: 32px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--main_overall_color_quinary);
+    max-width: 320px;
+    margin-bottom: 10px;
+}
+
+.criteria_tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--main_overall_color_secundary);
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.approach_criteria_visual h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--main_overall_color_quaternary);
+}
+
+.criteria_line {
+    width: 80px;
+    height: 4px;
+    background: var(--main_overall_color_secundary);
+    margin-top: 24px;
+    border-radius: 300px;
+}
+
+.approach_criteria_content p {
+    font-size: 0.90rem;
+    line-height: 1.8;
+    margin-bottom: 5px;
+    color: var(--main_overall_color_primary);
+}
+
+
+/* =========================
+   CRITERIO EJECUTA – IMÁGENES
+========================= */
+
+.approach_criteria_images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 40px 60px 40px 60px;
+}
+
+.approach_criteria_images img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.approach_criteria_images img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}

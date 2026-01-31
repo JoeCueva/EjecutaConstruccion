@@ -56,7 +56,7 @@ const Contact = () => {
 
                         <div className="enterprise_contact_request_introductory_text_wrapper">
                             <h3 className="enterprise_contact_request_introductory_text">
-                                Al trabajar con EJECUTA, buscas la tranquilidad de saber que tu proyecto está en buenas manos.
+                                Al trabajar con <span>EJECUTA</span> , buscas la tranquilidad de saber que tu proyecto está en buenas manos.
                                 Nos aseguramos de que cada instalación cumpla con las normas técnicas y se ejecute con orden,
                                 calidad y respeto por los plazos, para que puedas avanzar con confianza desde el primer día.
                             </h3>
@@ -64,14 +64,13 @@ const Contact = () => {
 
                         <div className="enterprise_contact_request_archetype_heading_wrapper">
                             <h2 className="enterprise_contact_request_archetype_heading">
-                                Trabajamos con un arquetipo bien claro
+                                Trabajamos con un arquetipo claro
                             </h2>
                         </div>
 
                         <div className="enterprise_contact_request_value_argumentation_block">
-
                             <h2 className="enterprise_contact_request_value_argumentation_heading">
-                                ¿Por qué vale la pena contactarnos antes de ejecutar tu proyecto?
+                                ¿Por qué es clave conversar antes de ejecutar tu proyecto?
                             </h2>
 
                             <p className="enterprise_contact_request_value_argumentation_description">
@@ -115,10 +114,10 @@ const Contact = () => {
 
                             <div className="enterprise_contact_request_direct_information_items_group">
                                 <span className="enterprise_contact_request_direct_information_item">
-                                    <i class="fa-solid fa-envelope"></i> jcueva@ejecuta.net.pe
+                                    <i class="fa-solid fa-envelope"></i> postVenta@ejecuta.net.pe
                                 </span>
                                 <span className="enterprise_contact_request_direct_information_item">
-                                    <i class="fa-solid fa-phone"></i> +51 930 625 555
+                                    <i class="fa-solid fa-phone"></i> +51 987 654 321
                                 </span>
                                 <span className="enterprise_contact_request_direct_information_item">
                                     <i class="fa-solid fa-location-dot"></i> Lima, Perú

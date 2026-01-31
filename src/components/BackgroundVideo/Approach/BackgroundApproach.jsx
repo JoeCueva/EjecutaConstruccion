@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import BackgroundApproachData from './BackgroundApproach.json';
-import FondoApproach from '../../../assets/img/ImagenesFondos/fondoEnfoque.jpg'
+import FondoApproach from '../../../assets/img/ImagenesFondos/fondoEnfoque.jpeg';
 import './BackgroundApproach.css';
 
 const BackgroundApproach = () => {

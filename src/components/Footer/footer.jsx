@@ -22,9 +22,25 @@ const Footer = () => {
                 <img src={fondoLogo} alt="LogoCasco" />
             </div>
 
-            {/* ======================= SECCION DESCRIPCION - LI - CONTACTO ======================= */}
-            <div className="footer_top_section_layout">
+            {/* ============================= SECCION LOGOS CLIENTES ============================== */}
+            <div className="footer_partners_section">
+                <h3 className="footer_partners_title">Socios</h3>
 
+                <div className="footer_partners_logo_grid">
+                    <img src={Logo1} alt="3M" />
+                    <img src={Logo2} alt="Bticino" />
+                    <img src={Logo3} alt="Dincorsa" />
+                    <img src={Logo4} alt="Eaton" />
+                    <img src={Logo5} alt="TuboPlast" />
+                    <img src={Logo6} alt="Matusita" />
+                    <img src={Logo7} alt="Jormen" />
+                </div>
+            </div>
+
+
+            {/* ======================= SECCION DESCRIPCION - LI - CONTACTO ======================= */}
+            <h3 className="footer_partners_titles_secciones">Contenedor</h3>
+            <div className="footer_top_section_layout">
                 <div className="footer_column_about_section">
                     <h3>Nosotros</h3>
                     <p>
@@ -62,21 +78,6 @@ const Footer = () => {
                     </div>
                 </div>
 
-            </div>
-
-            {/* ============================= SECCION LOGOS CLIENTES ============================== */}
-            <div className="footer_partners_section">
-                <h3 className="footer_partners_title">Socios</h3>
-
-                <div className="footer_partners_logo_grid">
-                    <img src={Logo1} alt="3M" />
-                    <img src={Logo2} alt="Bticino" />
-                    <img src={Logo3} alt="Dincorsa" />
-                    <img src={Logo4} alt="Eaton" />
-                    <img src={Logo5} alt="TuboPlast" />
-                    <img src={Logo6} alt="Matusita" />
-                    <img src={Logo7} alt="Jormen" />
-                </div>
             </div>
 
             <h3 className="footer_partners_titles">Redes</h3>

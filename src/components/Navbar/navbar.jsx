@@ -5,6 +5,8 @@ import logo from '../../assets/img/LogoEjecuta/LogosFondosOscuro.png';
 import logo2 from '../../assets/img/LogoEjecuta/LogosFondosBlancos.png';
 import VideoBg from '../BackgroundVideo/Home/BackgroundHome';
 import VideoBgContact from '../BackgroundVideo/Contact/BackgroundContact.jsx';
+import VideoBgApproach from '../BackgroundVideo/Approach/BackgroundApproach.jsx';
+import VideoBgCriterion from '../BackgroundVideo/Criterion/BackgroundCriterion.jsx';
 const Navbar = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
@@ -73,7 +75,7 @@ const Navbar = () => {
                             href="#"
                             aria-label="Facebook"
                             className="top_utility_social_media_link">
-                            <i className="fa-brands fa-facebook-f"></i>
+                            <i className="fa-brands fa-linkedin-in"></i>
                         </a>
 
                         <a
@@ -98,8 +100,8 @@ const Navbar = () => {
             <div className='application_global_header_layout_wrapper'>
                 {location.pathname === "/contactos" && <VideoBgContact />}
                 {location.pathname === "/approach" && <VideoBgApproach />}
-                {location.pathname !== "/contactos" &&
-                    location.pathname !== "/approach" && <VideoBg />}
+                {location.pathname === "/criterion" && <VideoBgCriterion />}
+                {location.pathname === "/" && <VideoBg />}
 
                 {/* ============================== SECCION DE NAVBAR ============================= */}
                 <header className={`primary_navigation_header_container ${isScrolled ? 'scrolled' : ''}`}>
@@ -159,7 +161,7 @@ const Navbar = () => {
                                         </li>
                                         <li className='navigation_submenu_list_item'>
                                             <NavLink className='navigation_submenu_link_element'
-                                                to="/empresa#criterio"
+                                                to="/criterion"
                                                 onClick={closeMobileMenu}>
                                                 <i className="fa-solid fa-brain"></i> Criterio
                                             </NavLink>
