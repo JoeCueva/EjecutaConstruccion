@@ -171,10 +171,6 @@
     color: var(--main_overall_color_primary);
 }
 
-
-
-/*****************************************************************/
-
 /* ==========================================================================
    RESPONSIVE DESIGN - MEDIA QUERIES
    ========================================================================== */
@@ -216,6 +212,17 @@
 }
 
 @media (max-width: 480px) {
+
+    .application_global_header_container_video {
+        width: 100%;
+        height: 85vh;
+        overflow: hidden;
+    }
+
+    .hero_text_container_text_left {
+        margin-top: 60px;
+    }
+
     .fade_text {
         font-size: 1.5rem;
         line-height: 1.2;

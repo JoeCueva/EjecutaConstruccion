@@ -46,7 +46,7 @@
     z-index: 10;
     max-width: 100%;
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 15vh;
     color: var(--main_overall_color_tertiary);
     padding: 3px 3px;
     opacity: 0;
@@ -67,7 +67,7 @@
 }
 
 .fade_text_approach {
-    max-width: 40vw;
+    max-width: 50vw;
     margin: 0;
     padding-left: 50px;
     text-align: left;

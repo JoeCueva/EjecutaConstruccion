@@ -1,0 +1,221 @@
+:root {
+    --main_overall_color_primary: #3e3e3d;
+    --main_overall_color_secundary: #ee0613;
+    --main_overall_color_tertiary: #ffffff;
+    --main_overall_color_queternary: #131313;
+    --main_overall_color_quinary: #131313de;
+    --main_overall_color_sextuple: #ffffffb4;
+}
+
+@font-face {
+    font-family: 'mainText';
+    src: url('../../assets/fonts/Parkinsans-Medium.ttf');
+}
+
+.application_global_header_container_img_project {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    z-index: -10;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.application_global_background_element_project {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(90%) brightness(0.5) contrast(1.0);
+}
+
+.application_global_img_element_overlay_project {
+    position: absolute;
+    height: 80vh;
+    inset: 0;
+    background: rgba(34, 34, 34, 0.37);
+    z-index: 1;
+}
+
+.hero_text_container_text_left_project {
+    font-family: 'mainText';
+    justify-content: center;
+    z-index: 10;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    color: var(--main_overall_color_tertiary);
+    padding: 20px 10px;
+}
+
+
+.hero_title_fixed_height_wrapper_project {
+    min-height: calc(3.0rem * 1.4);
+    align-items: center;
+}
+
+.fade_text_project {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--main_overall_color_tertiary);
+    animation: slideInText 6s ease-in-out both;
+    text-wrap: balance;
+}
+
+@keyframes slideInText {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+        filter: blur(10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+        filter: blur(10px);
+    }
+}
+
+.hero_subtitle_project {
+    font-size: 1.3rem;
+    color: var(--main_overall_color_sextuple);
+    margin: 20px 0 8px 0;
+    letter-spacing: 0.4px;
+    animation: fadeInStatic 1s ease-out forwards;
+}
+
+@keyframes fadeInStatic {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================================
+   CONTACT PAGE – RESPONSIVE SYSTEM
+   ========================================================= */
+
+/* =======================
+   LAPTOP / TABLET ≤1200px
+   ======================= */
+@media (max-width: 1200px) {
+
+    .application_global_header_container_img_project,
+    .application_global_img_element_overlay_project {
+        height: 75vh;
+    }
+
+    .hero_text_container_text_left_project {
+        margin-top: 22vh;
+        padding: 0 3rem;
+    }
+
+    .fade_text_project {
+        font-size: 2.1rem;
+        max-width: 70%;
+    }
+
+    .hero_subtitle_project {
+        font-size: 1.2rem;
+    }
+}
+
+/* =======================
+   TABLET ≤1024px
+   ======================= */
+@media (max-width: 1024px) {
+
+    .application_global_header_container_img_project,
+    .application_global_img_element_overlay_project {
+        height: 70vh;
+    }
+
+    .hero_text_container_text_left_project {
+        margin-top: 20vh;
+        padding: 0 2.5rem;
+    }
+
+    .fade_text_project {
+        font-size: 2rem;
+        max-width: 80%;
+    }
+
+    .hero_subtitle_project {
+        font-size: 1.1rem;
+    }
+}
+
+/* =======================
+   MOBILE ≤768px
+   ======================= */
+@media (max-width: 768px) {
+
+    .application_global_header_container_img_project,
+    .application_global_img_element_overlay_project {
+        height: 65vh;
+    }
+
+    .hero_text_container_text_left_project {
+        margin-top: 18vh;
+        padding: 0 2rem;
+    }
+
+    .fade_text_project {
+        font-size: 1.8rem;
+        max-width: 100%;
+        line-height: 1.2;
+    }
+
+    .hero_subtitle_project {
+        font-size: 1rem;
+        margin-top: 16px;
+    }
+}
+
+/* =======================
+   SMALL MOBILE ≤480px
+   ======================= */
+@media (max-width: 480px) {
+
+    .application_global_header_container_img_project,
+    .application_global_img_element_overlay_project {
+        height: 60vh;
+    }
+
+    .hero_text_container_text_left_project {
+        margin-top: 16vh;
+        padding: 0 1.2rem;
+    }
+
+    .fade_text_project {
+        font-size: 1.55rem;
+    }
+
+    .hero_subtitle_project {
+        font-size: 0.95rem;
+    }
+}

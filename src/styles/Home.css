@@ -167,11 +167,11 @@
 
 .bradn_hero_background_images_overlay_wrapper img {
     width: 100%;
-    max-width: 720px;
+    max-width: 520px;
     height: auto;
     object-fit: contain;
-    margin-left: 10%;
-    margin-bottom: 3.5%;
+    margin-left: 5vw;
+    margin-bottom: 80px;
     border-radius: 10px;
 }
 
@@ -431,7 +431,7 @@
     position: relative;
     width: 100%;
     /* height: 90vh; */
-    padding: 50px 60px;
+    padding: 50px 30px;
     text-align: center;
     font-family: 'mainText';
     overflow: hidden;
@@ -443,8 +443,8 @@
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .brand_multidisciplinary_installation_capabilities_intro_container {
@@ -468,6 +468,7 @@
 
 .brand_multidisciplinary_installation_capabilities_item_card {
     position: relative;
+    width: 100%;
     overflow: hidden;
     background-color: var(--main_overall_color_tertiary);
     padding: 42px 28px;
@@ -1012,6 +1013,7 @@
 @media (max-width: 768px) {
 
     .certainty_section {
+        margin-top: -15vh;
         padding: 4rem 1.5rem;
     }
 
@@ -1051,11 +1053,12 @@
 
     .brand_hero_background_banner_main_heading {
         margin-top: 0;
+        text-align: start;
         font-size: 24px;
     }
 
     .brand_hero_background_banner_supporting_description {
-        text-align: center;
+        text-align: justify;
         margin: 0 auto;
     }
 
@@ -1063,24 +1066,37 @@
         flex-direction: column;
         padding: 40px 20px;
         gap: 30px;
+        text-align: justify;
+    }
+
+    .container_section_info .container_section_info_left .certainty_tag {
+        display: flex;
+        justify-content: center;
     }
 
     .container_section_info_title {
         font-size: 32px;
-        text-align: center;
+        text-align: start;
     }
 
     .brand_multidisciplinary_installation_capabilities_container_intro_card {
         grid-template-columns: 1fr;
     }
 
+    .enterprise_level_client_trust_validation_section_wrapper .enterprise_level_client_trust_validation_section_container .enterprise_level_client_trust_validation_logos_grid_container .enterprise_level_client_trust_validation_logo_item_container {
+        margin: 0 15px 0 15px;
+    }
+
     .enterprise_level_project_engagement_call_to_action_section {
         height: auto;
-        padding: 60px 0;
     }
 
     .enterprise_level_project_engagement_call_to_action_primary_heading {
         font-size: 28px;
+    }
+
+    .enterprise_project_experience_description {
+        text-align: justify;
     }
 }
 
@@ -1125,4 +1141,5 @@
     .brand_quote_modal_service_title {
         font-size: 1.2rem;
     }
+
 }

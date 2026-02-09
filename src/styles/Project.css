@@ -1,0 +1,235 @@
+:root {
+    --main_overall_color_primary: #3e3e3d;
+    --main_overall_color_secundary: #ee0613;
+    --main_overall_color_tertiary: #ffffff;
+    --main_overall_color_quaternary: #131313;
+    --main_overall_color_quinary: #131313de;
+    --main_overall_color_sextuple: #ffffffb4;
+}
+
+@font-face {
+    font-family: 'mainText';
+    src: url('../../assets/fonts/Parkinsans-Medium.ttf');
+}
+
+/* ===========================
+   PROJECT / BROCHURE
+=========================== */
+
+.project_coming_container {
+    width: 100%;
+    padding: 180px 20px 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'mainText', sans-serif;
+}
+
+.project_coming_card {
+    max-width: 620px;
+    width: 100%;
+    text-align: center;
+}
+
+.project_coming_card h2 {
+    font-size: 3.0rem;
+    font-weight: 600;
+    color: var(--main_overall_color_quinary);
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.project_coming_card h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--main_overall_color_quinary);
+    margin-bottom: 36px;
+    line-height: 1.6;
+}
+
+.project_download_btn {
+    padding: 14px 36px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'mainText', sans-serif;
+    color: var(--main_overall_color_tertiary);
+    background-color: var(--main_overall_color_secundary);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.project_download_btn:hover {
+    background-color: var(--main_overall_color_primary);
+}
+
+.project_download_btn:active {
+    transform: scale(0.98);
+}
+
+
+/* ===========================
+   TRUST SECTIONS CLIENTES
+=========================== */
+
+.project_trust_section {
+    width: 100%;
+    max-width: 1200px;
+    margin: -15vh auto;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'mainText';
+}
+
+.project_trust_section h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--main_overall_color_primary);
+    margin-bottom: 12px;
+}
+
+.project_trust_section p {
+    max-width: 680px;
+    margin: 0 auto 40px auto;
+    font-size: 0.95rem;
+    color: var(--main_overall_color_quinary);
+    line-height: 1.6;
+}
+
+.project_logo_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.project_logo_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.75;
+    transition: all 0.25s ease;
+}
+
+.project_logo_item img {
+    max-width: 120px;
+    max-height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.project_logo_item:hover {
+    opacity: 1;
+}
+
+.project_logo_item:hover img {
+    filter: grayscale(0%);
+}
+
+/* SECCION MARCAS*/
+
+.project_trust_section_marcas {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px 30px 20px;
+    text-align: center;
+    font-family: 'mainText';
+}
+
+.project_trust_section_marcas h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--main_overall_color_primary);
+    margin-bottom: 12px;
+}
+
+.project_trust_section_marcas p {
+    max-width: 680px;
+    margin: 0 auto 40px auto;
+    font-size: 0.95rem;
+    color: var(--main_overall_color_quinary);
+    line-height: 1.6;
+}
+
+.project_logo_grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.project_logo_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.75;
+    transition: all 0.25s ease;
+}
+
+.project_logo_items img {
+    max-width: 120px;
+    max-height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.project_logo_items:hover {
+    opacity: 1;
+}
+
+.project_logo_items:hover img {
+    filter: grayscale(0%);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+    .project_trust_section {
+        padding: 50px 16px;
+    }
+
+    .project_trust_section h3 {
+        font-size: 1.4rem;
+    }
+
+    .project_logo_grid {
+        gap: 28px;
+    }
+
+    .project_logo_item img {
+        max-width: 100px;
+        max-height: 50px;
+    }
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+
+    .project_trust_section {
+        margin-top: -40vh;
+    }
+
+    .project_coming_container {
+        /* padding: 60px 16px; */
+    }
+
+    .project_coming_card h2 {
+        font-size: 1.6rem;
+    }
+
+    .project_coming_card h4 {
+        font-size: 0.95rem;
+    }
+
+    .project_download_btn {
+        width: 100%;
+        padding: 14px;
+    }
+}

@@ -28,7 +28,7 @@
     background-image: linear-gradient(135deg,
             rgba(62, 62, 61, 0.92) 10%,
             rgba(0, 120, 255, 0.15) 100%),
-        url("../assets/img/fondoComunicacionesImagen1.jpg");
+        url("../assets/img/fondoComunicaciones1.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -597,7 +597,7 @@
     font-family: 'mainText';
     position: relative;
     min-height: 75vh;
-    background-image: url("../assets/img/fondoComunicacionesImagen2.jpg");
+    background-image: url("../assets/img/fondoComunicaciones2.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -607,8 +607,8 @@
 
 .telecommunications-infrastructure-corporate-vision-background-overlay-wrapper {
     background: linear-gradient(135deg,
-            rgba(62, 62, 61, 0.93) 0%,
-            rgba(0, 120, 180, 0.2) 100%);
+            rgba(45, 45, 44, 0.93) 5%,
+            rgba(0, 120, 180, 0.2) 80%);
     width: 100%;
     padding: 3rem;
 }
@@ -820,6 +820,10 @@
         line-height: 1.2;
     }
 
+    .telecommunications-infrastructure-corporate-vision-centered-content-area h2 {
+        font-size: 2.0rem;
+    }
+
     .telecommunications-infrastructure-hero-statistics-metrics-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -844,6 +848,9 @@
 
     .telecommunications-infrastructure-process-connecting-line-element {
         display: none;
+    }
+    .telecommunications-infrastructure-introduction-certification-badge-element{
+        right: 1.5rem;
     }
 
 }

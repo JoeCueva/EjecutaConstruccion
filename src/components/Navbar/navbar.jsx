@@ -12,6 +12,7 @@ import VideoMethod from '../BackgroundVideo/Method/BackgroundMethod.jsx';
 import VideoServiceElectrical from '../BackgroundVideo/Electrical/BackgroundElectrical.jsx';
 import VideoServiceSanitary from '../BackgroundVideo/Sanitary/BackgroundSanitary.jsx';
 import VideoServiceFire from '../BackgroundVideo/Fire/BackgroundFire.jsx';
+import VideoProject from '../BackgroundVideo/Project/BackgroundProject.jsx';
 import VideoServiceCommunication from '../BackgroundVideo/Communication/BackgroundCommunication.jsx';
 const Navbar = () => {
 
@@ -113,6 +114,7 @@ const Navbar = () => {
                 {location.pathname === "/service-sanitary" && <VideoServiceSanitary />}
                 {location.pathname === "/service-fire" && <VideoServiceFire />}
                 {location.pathname === "/service-communications" && <VideoServiceCommunication />}
+                {location.pathname === "/project" && <VideoProject/>}
                 {location.pathname === "/" && <VideoBg />}
 
                 {/* ============================== SECCION DE NAVBAR ============================= */}

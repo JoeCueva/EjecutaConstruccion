@@ -10,6 +10,7 @@ import Sanitary from "../pages/Services/ServiceView/Sanitary/Sanitary";
 import Fire from "../pages/Services/ServiceView/Fire/Fire";
 import Communications from "../pages/Services/ServiceView/Communications/Communications";
 import Footer from "../components/Footer/footer";
+import Projects from "../pages/Projects/Project";
 import Contact from "../pages/Contact/contact";
 import Chatbot from "../components/ChatBot/ChatBot";
 import ScrollToTop from "../utils/ScrollToTop";
@@ -31,6 +32,7 @@ const AppRouter = () => {
                 <Route path="/service-sanitary" element={<Sanitary />} />
                 <Route path="/service-fire" element={<Fire />} />
                 <Route path="/service-communications" element={<Communications />} />
+                <Route path="/project" element={<Projects/>}/>
             </Routes>
             <Footer />
             <Chatbot/>
