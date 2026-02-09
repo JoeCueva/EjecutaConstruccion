@@ -490,5 +490,154 @@
 
 .cta-button:hover {
     background: var(--main_overall_color_primary);
-    color: #fff;
+    color: var(--main_overall_color_tertiary);
+}
+
+
+@media (max-width: 1024px) {
+
+    .method-header {
+        padding: 7rem 3rem 5rem;
+    }
+
+    .method-navigation {
+        padding: 0 3rem;
+    }
+
+    .section-content,
+    .certifications-section,
+    .value-proposition,
+    .method-cta {
+        padding: 5rem 3rem;
+    }
+
+    .nav-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .cta-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .cta-action {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* ===== HEADER ===== */
+    .method-header {
+        padding: 6rem 1.5rem 4rem;
+    }
+
+    .header-content {
+        margin-top: -6vh;
+    }
+
+    .main-title {
+        font-size: 2.1rem;
+        line-height: 1.25;
+    }
+
+    .main-description {
+        font-size: 0.9rem;
+    }
+
+    /* ===== NAV ===== */
+    .method-navigation {
+        padding: 0 1rem;
+        margin-top: -4vh;
+    }
+
+    .nav-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-tab {
+        justify-content: flex-start;
+    }
+
+    /* ===== CONTENT ===== */
+    .section-content {
+        padding: 4rem 1.5rem;
+    }
+
+    .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .header-text h2 {
+        font-size: 2rem;
+    }
+
+    /* ===== PROCESS ===== */
+    .process-card {
+        padding: 2rem;
+    }
+
+    /* ===== CERT ===== */
+    .certifications-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ===== VALUE ===== */
+    .value-proposition {
+        padding: 4rem 1.5rem;
+    }
+
+    .value-header h2 {
+        font-size: 2.1rem;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .main-title {
+        font-size: 1.85rem;
+    }
+
+    .header-label {
+        font-size: 0.7rem;
+        padding: 0.5rem 1.4rem;
+    }
+
+    .header-text h2,
+    .cert-intro h2,
+    .value-header h2,
+    .cta-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .process-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .value-index {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        padding: 1rem 2.2rem;
+        font-size: 0.85rem;
+    }
+
 }

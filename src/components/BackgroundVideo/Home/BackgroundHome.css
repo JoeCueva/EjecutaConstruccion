@@ -47,7 +47,7 @@
     font-family: 'mainText';
     position: absolute;
     top: 50%;
-    left: 55%;
+    right: 2.5%;
     transform: translateY(-50%) scaleX(-1);
     z-index: 10;
     max-width: 580px;
@@ -169,4 +169,95 @@
 .btn_secondary:hover {
     background-color: var(--main_overall_color_tertiary);
     color: var(--main_overall_color_primary);
+}
+
+
+
+/*****************************************************************/
+
+/* ==========================================================================
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .hero_text_container_text_left {
+        right: 5%;
+        max-width: 85%;
+    }
+
+    .fade_text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero_text_container_text_left {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        text-align: center;
+        transform: translateY(-50%) scaleX(-1);
+        padding: 0 20px;
+        width: 90%;
+    }
+
+    .hero_title_fixed_height_wrapper {
+        justify-content: center;
+        min-height: calc(2.5rem * 2.4);
+    }
+
+    .fade_text {
+        font-size: 1.8rem;
+    }
+
+    .hero_actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .fade_text {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .hero_subtitle {
+        font-size: 0.8rem;
+        margin: 12px 0 6px 0;
+    }
+
+    .hero_reason {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+
+    .hero_actions {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .btn_primary,
+    .btn_secondary {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .fade_text {
+        font-size: 1.3rem;
+    }
+
+    .hero_title_fixed_height_wrapper {
+        min-height: calc(1.8rem * 2.4);
+    }
+
+    .hero_reason {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 }

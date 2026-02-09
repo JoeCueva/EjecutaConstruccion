@@ -605,12 +605,200 @@
 
 
 
+@media (max-width: 1024px) {
+
+    /* ===== HISTORIA ===== */
+    .monolithic_asymmetric_information_container_wrapper {
+        flex-direction: column;
+    }
+
+    .textual_narrative_content_left_alignment_block {
+        padding: 40px;
+    }
+
+    .visual_illustrative_media_right_alignment_block {
+        height: 320px;
+    }
+
+    /* ===== MISION / VISION / VALORES ===== */
+    .asymmetric_principles_and_operational_foundations_grid_layout,
+    .asymmetric_vision_projection_and_corporate_future_grid_layout,
+    .asymmetric_corporate_values_and_operational_ethics_grid_layout {
+        grid-template-columns: 1fr;
+    }
+
+    .conceptual_strategic_section_heading,
+    .conceptual_vision_section_heading,
+    .conceptual_values_section_heading {
+        font-size: 2.1rem;
+        padding: 30px;
+    }
+
+    .formal_mission_statement_structural_content_block,
+    .formal_vision_statement_structural_content_block,
+    .formal_values_statement_structural_content_block {
+        padding: 80px;
+    }
+
+    /* ===== SECTORES ===== */
+    .institutional_operational_sectors_navigation_controls {
+        top: 4rem;
+        right: 2rem;
+    }
+
+    /* ===== METODO ===== */
+    .method_steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+}
 
 
 
+@media (max-width: 768px) {
+
+    /* ===== HISTORIA ===== */
+    .main_essence_page_container {
+        padding: 40px 20px;
+    }
+
+    .textual_narrative_content_left_alignment_block {
+        padding: 30px 24px;
+    }
+
+    .detailed_history_descriptive_narrative_text {
+        font-size: 0.9rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .visual_illustrative_media_right_alignment_block {
+        height: 260px;
+    }
+
+    /* ===== MISION / VISION / VALORES ===== */
+    .institutional_identity_scroll_based_strategic_content_overlay_container {
+        background-attachment: scroll;
+    }
+
+    .conceptual_strategic_section_heading,
+    .conceptual_vision_section_heading,
+    .conceptual_values_section_heading {
+        font-size: 1.9rem;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .formal_mission_statement_structural_content_block,
+    .formal_vision_statement_structural_content_block,
+    .formal_values_statement_structural_content_block {
+        padding: 50px 30px;
+    }
+
+    .formal_mission_title_heading,
+    .formal_vision_title_heading,
+    .formal_values_title_heading {
+        font-size: 1.6rem;
+    }
+
+    .formal_mission_detailed_description_text,
+    .formal_vision_detailed_axiological_projection_text,
+    .formal_values_detailed_axiological_description_text {
+        font-size: 0.95rem;
+    }
+
+    /* ===== ICONOS ===== */
+    .conceptual_strategic_mission_icon_flix {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ===== RESUMEN ===== */
+    .specialization_narrative_summary {
+        font-size: 0.9rem;
+        letter-spacing: 0.6px;
+    }
+
+    /* ===== SECTORES ===== */
+    .institutional_operational_sectors_showcase_container {
+        padding: 4rem 1.5rem;
+    }
+
+    .institutional_operational_sectors_navigation_controls {
+        display: none;
+    }
+
+    .institutional_operational_sector_card {
+        min-width: 280px;
+        height: 380px;
+    }
+
+    /* ===== FAQ ===== */
+    .ejecuta_faq_header h2 {
+        font-size: 2.2rem;
+    }
+
+    .ejecuta_faq_card h3 {
+        font-size: 1.05rem;
+    }
+
+    /* ===== METODO ===== */
+    .method_teaser {
+        padding: 4rem 1.5rem;
+    }
+
+    .method_teaser_header h2 {
+        font-size: 2.2rem;
+    }
+
+    .method_steps {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+}
 
 
+@media (max-width: 390px) {
 
+    /* ===== HISTORIA ===== */
+    .textual_narrative_content_left_alignment_block {
+        padding: 24px 18px;
+    }
 
+    /* ===== MISION / VISION / VALORES ===== */
+    .conceptual_strategic_section_heading,
+    .conceptual_vision_section_heading,
+    .conceptual_values_section_heading {
+        font-size: 1.6rem;
+    }
 
+    .formal_mission_statement_structural_content_block,
+    .formal_vision_statement_structural_content_block,
+    .formal_values_statement_structural_content_block {
+        padding: 40px 22px;
+    }
 
+    /* ===== SECTORES ===== */
+    .institutional_operational_sector_card {
+        min-width: 250px;
+        height: 340px;
+    }
+
+    /* ===== FAQ ===== */
+    .ejecuta_faq_header h2 {
+        font-size: 1.9rem;
+    }
+
+    /* ===== METODO ===== */
+    .method_teaser_header h2 {
+        font-size: 1.9rem;
+    }
+
+    .method_step span {
+        font-size: 2.4rem;
+    }
+
+}

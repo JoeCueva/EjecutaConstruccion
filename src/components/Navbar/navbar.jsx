@@ -142,8 +142,8 @@ const Navbar = () => {
 
                                 <li
                                     className={`navigation_menu_list_item navigation_menu_list_item_with_dropdown ${mobileEmpresaOpen ? 'mobile-submenu-open' : ''}`}
-                                    onMouseEnter={() => setEmpresaOpen(true)}
-                                    onMouseLeave={() => setEmpresaOpen(false)}
+                                // onMouseEnter={() => setEmpresaOpen(true)}
+                                // onMouseLeave={() => setEmpresaOpen(false)}
                                 >
                                     <span
                                         className='navigation_menu_list_element navigation_menu_list_with_indicator'
@@ -155,7 +155,7 @@ const Navbar = () => {
 
                                     <ul
                                         className='navigation_submenu_dropdown_panel_container'
-                                        style={{ display: empresaOpen || mobileEmpresaOpen ? 'block' : 'none' }}
+                                    // style={{ display: empresaOpen || mobileEmpresaOpen ? 'block' : 'none' }}
                                     >
                                         <li className='navigation_submenu_list_item'>
                                             <NavLink className='navigation_submenu_link_element'
@@ -190,8 +190,8 @@ const Navbar = () => {
 
                                 <li
                                     className={`navigation_menu_list_item navigation_menu_list_item_with_dropdown ${mobileEspecialidadOpen ? 'mobile-submenu-open' : ''}`}
-                                    onMouseEnter={() => setEspecialidadOpen(true)}
-                                    onMouseLeave={() => setEspecialidadOpen(false)}
+                                // onMouseEnter={() => setEspecialidadOpen(true)}
+                                // onMouseLeave={() => setEspecialidadOpen(false)}
                                 >
 
                                     <span
@@ -202,7 +202,8 @@ const Navbar = () => {
                                     </span>
 
                                     <ul className='navigation_submenu_dropdown_panel_container'
-                                        style={{ display: especialidadOpen || mobileEspecialidadOpen ? 'block' : 'none' }}>
+                                        // style={{ display: especialidadOpen || mobileEspecialidadOpen ? 'block' : 'none' }}
+                                    >
                                         <li className='navigation_submenu_list_item'>
                                             <NavLink
                                                 className='navigation_submenu_link_element'
@@ -244,7 +245,7 @@ const Navbar = () => {
                                 <li className='navigation_menu_list_item'>
                                     <NavLink
                                         className="navigation_menu_link_element"
-                                        to="/proyectos"
+                                        to="/project"
                                         onClick={closeMobileMenu}>
                                         <i className="fa-solid fa-diagram-project"></i> Proyectos
                                     </NavLink>

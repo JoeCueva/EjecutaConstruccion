@@ -11,6 +11,7 @@ import Fire from "../pages/Services/ServiceView/Fire/Fire";
 import Communications from "../pages/Services/ServiceView/Communications/Communications";
 import Footer from "../components/Footer/footer";
 import Contact from "../pages/Contact/contact";
+import Chatbot from "../components/ChatBot/ChatBot";
 import ScrollToTop from "../utils/ScrollToTop";
 
 
@@ -31,8 +32,8 @@ const AppRouter = () => {
                 <Route path="/service-fire" element={<Fire />} />
                 <Route path="/service-communications" element={<Communications />} />
             </Routes>
-
             <Footer />
+            <Chatbot/>
         </BrowserRouter>
 
     );

@@ -46,7 +46,7 @@
     z-index: 10;
     max-width: 100%;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 25vh;
     color: var(--main_overall_color_tertiary);
     padding: 3px 3px;
     opacity: 0;
@@ -67,14 +67,80 @@
 }
 
 .fade_text_approach {
-    max-width: 45%;
+    max-width: 40vw;
     margin: 0;
     padding-left: 50px;
     text-align: left;
-    font-size: 2.9rem;
+    font-size: 4rem;
     font-weight: 800;
     line-height: 1.15;
     color: var(--main_overall_color_tertiary);
     text-wrap: balance;
     transition: opacity 0.8s ease-out;
+}
+
+
+
+/************************************************************/
+
+@media (max-width: 1024px) {
+
+    .hero_text_container_text_left_approach {
+        margin-top: 28vh;
+        padding: 0 40px;
+    }
+
+    .fade_text_approach {
+        max-width: 70vw;
+        padding-left: 0;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .hero_title_fixed_height_wrapper_approach {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .application_global_header_container_img_approach,
+    .application_global_img_element_overlay_approach {
+        height: 100vh;
+    }
+
+    .hero_text_container_text_left_approach {
+        margin-top: 30vh;
+        padding: 0 24px;
+        text-align: center;
+    }
+
+    .hero_title_fixed_height_wrapper_approach {
+        justify-content: center;
+        min-height: auto;
+    }
+
+    .fade_text_approach {
+        max-width: 100%;
+        padding-left: 0;
+        font-size: 2.2rem;
+        line-height: 1.25;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .hero_text_container_text_left_approach {
+        margin-top: 32vh;
+        padding: 0 18px;
+    }
+
+    .fade_text_approach {
+        font-size: 1.9rem;
+        line-height: 1.3;
+    }
+
 }

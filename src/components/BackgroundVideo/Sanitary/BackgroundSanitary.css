@@ -84,3 +84,86 @@
     color: var(--main_overall_color_sextuple);
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+
+    .hero_text_container_text_left_serviceSanitary {
+        margin-top: 26vh;
+        padding: 0 3rem;
+    }
+
+    .fade_text_serviceSanitary {
+        font-size: 2.8rem;
+        max-width: 75%;
+    }
+
+    .hero_description_serviceSanitary {
+        font-size: 1.1rem;
+        max-width: 65%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .hero_text_container_text_left_serviceSanitary {
+        margin-top: 28vh;
+        padding: 0 2rem;
+    }
+
+    .fade_text_serviceSanitary {
+        font-size: 2.4rem;
+        max-width: 85%;
+    }
+
+    .hero_description_serviceSanitary {
+        font-size: 1.05rem;
+        max-width: 80%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero_text_container_text_left_serviceSanitary {
+        margin-top: 30vh;
+        padding: 0 1.5rem;
+    }
+
+    .fade_text_serviceSanitary {
+        font-size: 2rem;
+        max-width: 95%;
+    }
+
+    .hero_description_serviceSanitary {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .application_global_header_container_img_serviceSanitary,
+    .application_global_img_element_overlay_serviceSanitary {
+        height: 100vh;
+    }
+
+    .hero_text_container_text_left_serviceSanitary {
+        margin-top: 32vh;
+        padding: 0 1rem;
+    }
+
+    .fade_text_serviceSanitary {
+        font-size: 1.7rem;
+        max-width: 100%;
+        line-height: 1.25;
+    }
+
+    .hero_description_serviceSanitary {
+        font-size: 0.9rem;
+        max-width: 100%;
+        line-height: 1.6;
+    }
+
+}

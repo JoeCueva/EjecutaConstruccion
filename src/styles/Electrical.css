@@ -555,3 +555,165 @@
     background: var(--main_overall_color_quinary);
     transform: translateY(-2px);
 }
+
+@media (max-width: 1024px) {
+
+    .electric-hero-overlay {
+        padding: 5rem 3rem;
+    }
+
+    .electric-hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .electric-hero-stats {
+        gap: 3rem;
+    }
+
+    .electric-intro {
+        padding: 4rem 3rem;
+    }
+
+    .electric-intro-container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    .intro-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .electrical-power-systems-specialized-solutions-showcase-section {
+        padding: 4rem 3rem;
+    }
+
+    .electric-vision-overlay {
+        padding: 5rem 3rem;
+    }
+
+    .electric-vision-content h2 {
+        font-size: 2.6rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .electric-hero {
+        background-attachment: scroll;
+    }
+
+    .electric-hero-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .electric-hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .electric-intro-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .intro-features {
+        grid-template-columns: 1fr;
+    }
+
+    .electrical-power-systems-solutions-technology-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .electric-hero-overlay {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .electric-hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .electric-hero-stats {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .electric-intro {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .electric-intro-container {
+        grid-template-columns: 1fr;
+    }
+
+    .electrical-power-systems-solutions-technology-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exec-steps-wrapper {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .exec-steps-wrapper::before {
+        display: none;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .electric-hero {
+        height: auto;
+        min-height: 100vh;
+        background-attachment: scroll;
+    }
+
+    .electric-hero-overlay {
+        padding: 4rem 1.2rem;
+    }
+
+    .electric-hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .electric-hero-description {
+        font-size: 0.85rem;
+    }
+
+    .electric-hero-stats {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .electric-intro {
+        padding: 3rem 1.2rem;
+    }
+
+    .electric-intro-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .intro-features {
+        grid-template-columns: 1fr;
+    }
+
+    .electric-vision-overlay {
+        padding: 4rem 1.2rem;
+    }
+
+    .electric-vision-content h2 {
+        font-size: 2rem;
+    }
+
+    .electric-cta {
+        padding: 3rem 1.2rem;
+    }
+
+}

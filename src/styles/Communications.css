@@ -732,3 +732,157 @@
     background: var(--main_overall_color_primary);
     transform: translateY(-3px);
 }
+
+
+
+/* =========================================================
+   TELECOMMUNICATIONS – RESPONSIVE SYSTEM
+   ========================================================= */
+
+/* =======================
+   LAPTOP / TABLET ≤1200px
+   ======================= */
+@media (max-width: 1200px) {
+
+    .telecommunications-infrastructure-hero-background-overlay-wrapper,
+    .telecommunications-infrastructure-introduction-presentation-section,
+    .telecommunications-infrastructure-specialized-systems-showcase-section,
+    .telecommunications-infrastructure-specialized-services-detailed-section,
+    .telecommunications-infrastructure-implementation-process-methodology-section,
+    .telecommunications-infrastructure-call-to-action-conversion-section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .telecommunications-infrastructure-hero-primary-content-container h1 {
+        font-size: 3.4rem;
+    }
+
+    .telecommunications-infrastructure-introduction-main-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .telecommunications-infrastructure-introduction-featured-image-container {
+        min-height: 480px;
+    }
+
+}
+
+/* =======================
+   TABLET ≤1024px
+   ======================= */
+@media (max-width: 1024px) {
+
+    .telecommunications-infrastructure-hero-banner-section {
+        height: auto;
+        min-height: 85vh;
+        background-attachment: scroll;
+    }
+
+    .telecommunications-infrastructure-hero-primary-content-container h1 {
+        font-size: 3rem;
+    }
+
+    .telecommunications-infrastructure-hero-statistics-metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .telecommunications-infrastructure-systems-technology-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .telecommunications-infrastructure-process-sequential-workflow-display {
+        grid-template-columns: repeat(5, minmax(auto, 140px));
+        margin-left: 0;
+    }
+
+}
+
+/* =======================
+   MOBILE ≤768px
+   ======================= */
+@media (max-width: 768px) {
+
+    .telecommunications-infrastructure-hero-background-overlay-wrapper,
+    .telecommunications-infrastructure-introduction-presentation-section,
+    .telecommunications-infrastructure-specialized-systems-showcase-section,
+    .telecommunications-infrastructure-specialized-services-detailed-section,
+    .telecommunications-infrastructure-implementation-process-methodology-section,
+    .telecommunications-infrastructure-call-to-action-conversion-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .telecommunications-infrastructure-hero-primary-content-container h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .telecommunications-infrastructure-hero-statistics-metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .telecommunications-infrastructure-services-horizontal-tabs-navigation {
+        grid-template-columns: 1fr;
+    }
+
+    .telecommunications-infrastructure-service-detailed-content-card {
+        grid-template-columns: 1fr;
+    }
+
+    .telecommunications-infrastructure-service-large-number-display-element {
+        font-size: 2.4rem;
+    }
+
+    .telecommunications-infrastructure-process-sequential-workflow-display {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .telecommunications-infrastructure-process-connecting-line-element {
+        display: none;
+    }
+
+}
+
+/* =======================
+   SMALL MOBILE ≤480px
+   ======================= */
+@media (max-width: 480px) {
+
+    .telecommunications-infrastructure-hero-primary-content-container h1 {
+        font-size: 2.1rem;
+    }
+
+    .telecommunications-infrastructure-hero-descriptive-paragraph-text {
+        font-size: 0.9rem;
+    }
+
+    .telecommunications-infrastructure-statistic-numerical-value-display {
+        font-size: 2.6rem;
+    }
+
+    .telecommunications-infrastructure-introduction-textual-content-area h2,
+    .telecommunications-infrastructure-systems-section-header-wrapper h2,
+    .telecommunications-infrastructure-services-section-header-block h2,
+    .telecommunications-infrastructure-implementation-process-content-container h2,
+    .telecommunications-infrastructure-call-to-action-centered-box-element h2 {
+        font-size: 2rem;
+    }
+
+    .telecommunications-infrastructure-corporate-vision-commitment-section .telecommunications-infrastructure-corporate-vision-background-overlay-wrapper .telecommunications-infrastructure-corporate-vision-centered-content-area .telecommunications-infrastructure-vision-key-features-benefits-grid {
+        display: contents;
+    }
+
+    .telecommunications-infrastructure-corporate-vision-commitment-section .telecommunications-infrastructure-corporate-vision-background-overlay-wrapper .telecommunications-infrastructure-corporate-vision-centered-content-area .telecommunications-infrastructure-vision-key-features-benefits-grid .telecommunications-infrastructure-individual-vision-feature-benefit-item {
+        margin-bottom: 20px;
+    }
+
+    .telecommunications-infrastructure-primary-action-button-element {
+        width: 100%;
+    }
+
+}

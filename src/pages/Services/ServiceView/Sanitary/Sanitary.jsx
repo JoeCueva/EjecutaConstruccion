@@ -221,7 +221,7 @@ const Sanitary = () => {
                 <div className="container">
                     <header className="section-header">
                         <span className="badge">Expertos en Ingeniería</span>
-                        <h2>Servicios Complementarios</h2>
+                        <h2 className='section-header_h3s'>Servicios Complementarios</h2>
                         <p>Soluciones técnicas especializadas con estándares internacionales.</p>
                     </header>
 

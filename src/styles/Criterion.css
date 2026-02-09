@@ -295,3 +295,153 @@
     line-height: 1.6;
     color: var(--main_overall_color_primary);
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    /* ===== TITULOS ===== */
+    .criterion_title {
+        font-size: 2rem;
+    }
+
+    /* ===== GRID CRITERIOS ===== */
+    .ejecuta_criterion_grid_main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tile_1,
+    .tile_2,
+    .tile_3,
+    .tile_4,
+    .tile_5,
+    .tile_6 {
+        grid-column: span 2;
+    }
+
+    .tile_7,
+    .tile_8 {
+        grid-column: span 4;
+    }
+
+    .criterion_tile {
+        height: 420px;
+    }
+
+    /* ===== CRITERIO EJECUTA ===== */
+    .approach_criteria_layout {
+        gap: 48px;
+    }
+
+    .approach_criteria_visual h2,
+    .no_impro_header h2 {
+        font-size: 2.2rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* ===== SECCION INTRO ===== */
+    .criterion_section {
+        padding: 40px 18px;
+    }
+
+    .criterion_description {
+        text-align: left;
+    }
+
+    /* ===== GRID CRITERIOS ===== */
+    .ejecuta_criterion_grid_main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .criterion_tile {
+        grid-column: span 2;
+        height: 340px;
+    }
+
+    .tile_overlay {
+        padding: 24px;
+    }
+
+    .tile_content h2 {
+        font-size: 1.3rem;
+    }
+
+    .tile_content p {
+        font-size: 0.85rem;
+        max-width: 100%;
+    }
+
+    /* ===== CRITERIO EJECUTA ===== */
+    .approach_criteria_section {
+        padding: 60px 18px;
+    }
+
+    .approach_criteria_layout {
+        gap: 36px;
+    }
+
+    .approach_criteria_visual h2 {
+        font-size: 2rem;
+    }
+
+    .criteria_key {
+        max-width: 100%;
+    }
+
+    /* ===== NO IMPRO ===== */
+    .no_impro_section {
+        padding-bottom: 50px;
+    }
+
+    .no_impro_header h2 {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+
+    /* ===== TITULOS ===== */
+    .criterion_title {
+        font-size: 1.6rem;
+    }
+
+    .approach_criteria_visual h2,
+    .no_impro_header h2 {
+        font-size: 1.8rem;
+    }
+
+    /* ===== GRID CRITERIOS ===== */
+    .criterion_tile {
+        height: 300px;
+    }
+
+    .tile_number {
+        font-size: 1.6rem;
+    }
+
+    .tile_content h2 {
+        font-size: 1.1rem;
+    }
+
+    .tile_content p {
+        font-size: 0.8rem;
+    }
+
+    /* ===== NO IMPRO ===== */
+    .no_impro_item p {
+        font-size: 0.85rem;
+    }
+
+}

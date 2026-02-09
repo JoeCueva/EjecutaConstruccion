@@ -22,73 +22,81 @@ const Footer = () => {
                 <img src={fondoLogo} alt="LogoCasco" />
             </div>
 
-            {/* ============================= SECCION LOGOS CLIENTES ============================== */}
-            <div className="footer_partners_section">
-                <h3 className="footer_partners_title">Socios</h3>
-
-                <div className="footer_partners_logo_grid">
-                    <img src={Logo1} alt="3M" />
-                    <img src={Logo2} alt="Bticino" />
-                    <img src={Logo3} alt="Dincorsa" />
-                    <img src={Logo4} alt="Eaton" />
-                    <img src={Logo5} alt="TuboPlast" />
-                    <img src={Logo6} alt="Matusita" />
-                    <img src={Logo7} alt="Jormen" />
-                </div>
-            </div>
-
-
             {/* ======================= SECCION DESCRIPCION - LI - CONTACTO ======================= */}
-            <h3 className="footer_partners_titles_secciones">Contenedor</h3>
-            <div className="footer_top_section_layout">
-                <div className="footer_column_about_section">
-                    <h3>Nosotros</h3>
-                    <p>
-                        Ejecuta es una empresa especializada en soluciones
-                        eléctricas, sanitarias y de comunicaciones,
-                        comprometida con la calidad, seguridad y
-                        cumplimiento en cada proyecto.
-                    </p>
-                </div>
+            <div className="footer_content_wrapper">
+                <h3 className="footer_section_divider">Acerca de</h3>
 
-                <div className="footer_column_navigation_section">
-                    <h3>Secciones</h3>
-                    <ul>
-                        <li><NavLink to="/">Inicio</NavLink></li>
-                        <li><NavLink to="/sobreMi">Empresa</NavLink></li>
-                        <li><NavLink to="/servicios/electrico">Eléctricas</NavLink></li>
-                        <li><NavLink to="/servicios/sanitario">Sanitarias</NavLink></li>
-                        <li><NavLink to="/servicios/contraincendio">Contraincendio</NavLink></li>
-                        <li><NavLink to="/servicios/comunicaciones">Comunicaciones</NavLink></li>
-                        <li><NavLink to="/proyectos">Proyectos</NavLink></li>
-                        <li><NavLink to="/contactos">Contacto</NavLink></li>
-                    </ul>
-                </div>
+                <div className="footer_top_section_layout">
+                    <div className="footer_column footer_column_about_section">
+                        <h3>Nosotros</h3>
+                        <p>
+                            Ejecuta es una empresa especializada en soluciones
+                            eléctricas, sanitarias y de comunicaciones,
+                            comprometida con la calidad, seguridad y
+                            cumplimiento en cada proyecto.
+                        </p>
+                    </div>
 
-                <div className="footer_column_contact_section">
-                    <h3>Contacto</h3>
-                    <p><FaPhoneAlt /> +51 987 654 321</p>
-                    <p><FaEnvelope /> contacto@ejecuta.net.pe</p>
-                    <p><FaMapMarkerAlt /> Lima, Perú</p>
+                    <div className="footer_column footer_column_navigation_section">
+                        <h3>Secciones</h3>
+                        <ul className="footer_navigation_two_columns">
+                            <li><NavLink to="/">Inicio</NavLink></li>
+                            <li><NavLink to="/service-electrical">Ins. Eléctricas</NavLink></li>
+                            <li><NavLink to="/approach">Enfoque Estratégico</NavLink></li>
+                            <li><NavLink to="/service-sanitary">Ins. Sanitarias</NavLink></li>
+                            <li><NavLink to="/essence">Nuestra Identidad</NavLink></li>
+                            <li><NavLink to="/service-fire">Ins. Contraincendio</NavLink></li>
+                            <li><NavLink to="/criterion">Criterio Técnico</NavLink></li>
+                            <li><NavLink to="/service-communications">Ins. Comunicaciones</NavLink></li>
+                            <li><NavLink to="/method">Método Ejecuta</NavLink></li>
+                            <li><NavLink to="/project">Proyectos</NavLink></li>
+                            <li><NavLink to="/contactos">Hablemos</NavLink></li>
+                        </ul>
+                    </div>
 
-                    <div className="footer_contact_schedule_block">
-                        <strong>Horario de atención</strong>
-                        <span>Lunes a Viernes</span>
-                        <span>07:00 am – 06:00 pm</span>
+                    <div className="footer_column footer_column_contact_section">
+                        <h3>Contacto</h3>
+                        <p><FaPhoneAlt /> +51 987 654 321</p>
+                        <p><FaEnvelope /> contacto@ejecuta.net.pe</p>
+                        <p><FaMapMarkerAlt /> Lima, Perú</p>
+
+                        <div className="footer_contact_schedule_block">
+                            <strong>Horario de atención</strong>
+                            <span>Lunes a Viernes</span>
+                            <span>07:00 am – 06:00 pm</span>
+                        </div>
                     </div>
                 </div>
-
             </div>
 
-            <h3 className="footer_partners_titles">Redes</h3>
+            {/* ============================= SECCION LOGOS CLIENTES ============================== */}
+            <div className="footer_content_wrapper">
+                <h3 className="footer_section_divider">Socios</h3>
+
+                <div className="footer_partners_section">
+                    <div className="footer_partners_logo_grid">
+                        <img src={Logo1} alt="3M" />
+                        <img src={Logo2} alt="Bticino" />
+                        <img src={Logo3} alt="Dincorsa" />
+                        <img src={Logo4} alt="Eaton" />
+                        <img src={Logo5} alt="TuboPlast" />
+                        <img src={Logo6} alt="Matusita" />
+                        <img src={Logo7} alt="Jormen" />
+                    </div>
+                </div>
+            </div>
 
             {/* ============================= SECCION REDES SOCIALES ============================== */}
-            <div className="footer_social_section">
-                <div className="footer_social_icons_grid">
-                    <a href="#" className="footer_social_icon"><i className="fa-brands fa-youtube"></i></a>
-                    <a href="#" className="footer_social_icon"><i className="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" className="footer_social_icon"><i className="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" className="footer_social_icon"><i className="fa-brands fa-whatsapp"></i></a>
+            <div className="footer_content_wrapper">
+                <h3 className="footer_section_divider">Redes</h3>
+
+                <div className="footer_social_section">
+                    <div className="footer_social_icons_grid">
+                        <a href="#" className="footer_social_icon"><i className="fa-brands fa-youtube"></i></a>
+                        <a href="#" className="footer_social_icon"><i className="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" className="footer_social_icon"><i className="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" className="footer_social_icon"><i className="fa-brands fa-whatsapp"></i></a>
+                    </div>
                 </div>
             </div>
 

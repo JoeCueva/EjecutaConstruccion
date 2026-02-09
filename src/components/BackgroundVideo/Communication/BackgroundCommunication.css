@@ -84,3 +84,77 @@
     color: var(--main_overall_color_sextuple);
     text-align: center;
 }
+
+
+/* =========================================================
+   SERVICE COMMUNICATION – RESPONSIVE
+   ========================================================= */
+
+/* =======================
+   TABLET ≤1024px
+   ======================= */
+@media (max-width: 1024px) {
+
+    .hero_text_container_text_left_serviceCommunication {
+        margin-top: 26vh;
+        padding: 0 3rem;
+    }
+
+    .fade_text_serviceCommunication {
+        font-size: 2.8rem;
+        max-width: 75%;
+    }
+
+    .hero_description_serviceCommunication {
+        font-size: 1.1rem;
+        max-width: 65%;
+    }
+
+}
+
+/* =======================
+   MOBILE ≤768px
+   ======================= */
+@media (max-width: 768px) {
+
+    .hero_text_container_text_left_serviceCommunication {
+        margin-top: 24vh;
+        padding: 0 2rem;
+    }
+
+    .fade_text_serviceCommunication {
+        font-size: 2.4rem;
+        line-height: 1.25;
+        max-width: 90%;
+    }
+
+    .hero_description_serviceCommunication {
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 85%;
+    }
+
+}
+
+/* =======================
+   SMALL MOBILE ≤480px
+   ======================= */
+@media (max-width: 480px) {
+
+    .hero_text_container_text_left_serviceCommunication {
+        margin-top: 22vh;
+        padding: 0 1.5rem;
+    }
+
+    .fade_text_serviceCommunication {
+        font-size: 2rem;
+        line-height: 1.25;
+        max-width: 100%;
+    }
+
+    .hero_description_serviceCommunication {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+
+}

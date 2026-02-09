@@ -21,6 +21,7 @@ import imagenEjemplo2 from '../../assets/img/obra2.png';
 import imagenEjemplo3 from '../../assets/img/revisionTablero.png';
 import enfoqueIngenierio from '../../assets/img/enfoqueIngeniero.jpg';
 import infraTuberias from '../../assets/img/infraTuberias.jpg';
+import ImagenSeccionMarca from '../../assets/img/instalacionInspeccion.jpeg';
 import { use, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -259,6 +260,11 @@ const Home = () => {
             <section className="brand_hero_background_banner_section_wrapper"
             // style={{ backgroundImage: `url(${Banner})` }}
             >
+
+                <div className='bradn_hero_background_images_overlay_wrapper'>
+                    <img src={ImagenSeccionMarca} alt="iamgen para seccion marca" />
+                </div>
+
                 <div className="brand_hero_background_banner_overlay_container">
                     <div className="brand_hero_background_banner_content_alignment">
 
@@ -415,7 +421,7 @@ const Home = () => {
 
                             <NavLink
                                 className="navigation_menu_link_element_seccion_services"
-                                to="/"
+                                to="/service-electrical"
                             >
                                 Más información <i className="fa-solid fa-arrow-right"></i>
                             </NavLink>
@@ -455,7 +461,7 @@ const Home = () => {
                             </button>
                             <NavLink
                                 className="navigation_menu_link_element_seccion_services"
-                                to="/"
+                                to="/service-sanitary"
                             >
                                 Más información <i className="fa-solid fa-arrow-right"></i>
                             </NavLink>
@@ -496,7 +502,7 @@ const Home = () => {
 
                             <NavLink
                                 className="navigation_menu_link_element_seccion_services"
-                                to="/"
+                                to="/service-communications"
                             >
                                 Más información <i className="fa-solid fa-arrow-right"></i>
                             </NavLink>
@@ -537,7 +543,7 @@ const Home = () => {
 
                             <NavLink
                                 className="navigation_menu_link_element_seccion_services"
-                                to="/"
+                                to="/service-fire"
                             >
                                 Más información <i className="fa-solid fa-arrow-right"></i>
                             </NavLink>

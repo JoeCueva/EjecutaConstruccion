@@ -516,3 +516,198 @@
         transform: translateX(0);
     }
 }
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    /* ===== ESSENCE ===== */
+    .approach_essence_split {
+        grid-template-columns: 1fr;
+    }
+
+    .approach_essence_image_bg {
+        min-height: 45vh;
+    }
+
+    .approach_essence_content {
+        padding: 60px 40px;
+    }
+
+    .approach_essence_wrapper h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .approach_essence_wrapper p,
+    .approach_essence_lead {
+        text-align: left;
+    }
+
+    /* ===== DIAGRAMA ===== */
+    .approach_principles_layout {
+        gap: 100px 250px;
+    }
+
+    .principle_number {
+        font-size: 4rem;
+    }
+
+    /* ===== RESULTADO ===== */
+    .result_grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .result_intro h2 {
+        font-size: 2.2rem;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* ===== ESSENCE ===== */
+    .approach_essence_section,
+    .approach_essence_split {
+        min-height: auto;
+    }
+
+    .approach_essence_image_bg {
+        min-height: 40vh;
+    }
+
+    .approach_essence_content {
+        padding: 50px 24px;
+    }
+
+    .approach_essence_wrapper {
+        padding: 0;
+    }
+
+    .approach_essence_wrapper h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .approach_essence_lead,
+    .approach_essence_wrapper p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .approach_essence_highlight {
+        font-size: 0.95rem;
+        padding-left: 18px;
+    }
+
+    /* ===== DIAGRAMA ===== */
+    .approach_container_visual {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .approach_center_bg {
+        display: none;
+    }
+
+    .approach_principles_layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: left;
+    }
+
+    .approach_principle_card {
+        max-width: 100%;
+    }
+
+    .pos_1,
+    .pos_3 {
+        text-align: left;
+    }
+
+    .pos_1 .principle_content,
+    .pos_3 .principle_content {
+        align-items: flex-start;
+    }
+
+    .principle_number {
+        font-size: 3.2rem;
+    }
+
+    /* ===== MULTIDISCIPLINARIA ===== */
+    .approach_multidisciplinary_section {
+        background-attachment: scroll;
+    }
+
+    .section_header h2 {
+        font-size: 1.7rem;
+    }
+
+    .multidisc_role h3 {
+        font-size: 1.5rem;
+    }
+
+    .multidisc_grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .multidisc_footer {
+        padding: 25px 24px;
+    }
+
+    /* ===== RESULTADO ===== */
+    .result_intro h2 {
+        font-size: 2rem;
+    }
+
+    .result_main {
+        font-size: 0.95rem;
+    }
+
+    .result_card {
+        padding: 22px 26px;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+
+    .approach_essence_content {
+        padding: 40px 18px;
+    }
+
+    .approach_essence_wrapper h2 {
+        font-size: 1.6rem;
+    }
+
+    .approach_principles_intro h2 {
+        font-size: 1.6rem;
+    }
+
+    .principle_number {
+        font-size: 2.8rem;
+    }
+
+    .section_header h2 {
+        font-size: 1.5rem;
+    }
+
+    .multidisc_role h3 {
+        font-size: 1.3rem;
+    }
+
+    .result_intro h2 {
+        font-size: 1.8rem;
+    }
+
+}

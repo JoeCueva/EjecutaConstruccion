@@ -114,3 +114,108 @@
         transform: translateY(0);
     }
 }
+
+/* =========================================================
+   CONTACT PAGE – RESPONSIVE SYSTEM
+   ========================================================= */
+
+/* =======================
+   LAPTOP / TABLET ≤1200px
+   ======================= */
+@media (max-width: 1200px) {
+
+    .application_global_header_container_img_contact,
+    .application_global_img_element_overlay_contact {
+        height: 75vh;
+    }
+
+    .hero_text_container_text_left_contact {
+        margin-top: 22vh;
+        padding: 0 3rem;
+    }
+
+    .fade_text_contact {
+        font-size: 2.1rem;
+        max-width: 70%;
+    }
+
+    .hero_subtitle_contact {
+        font-size: 1.2rem;
+    }
+}
+
+/* =======================
+   TABLET ≤1024px
+   ======================= */
+@media (max-width: 1024px) {
+
+    .application_global_header_container_img_contact,
+    .application_global_img_element_overlay_contact {
+        height: 70vh;
+    }
+
+    .hero_text_container_text_left_contact {
+        margin-top: 20vh;
+        padding: 0 2.5rem;
+    }
+
+    .fade_text_contact {
+        font-size: 2rem;
+        max-width: 80%;
+    }
+
+    .hero_subtitle_contact {
+        font-size: 1.1rem;
+    }
+}
+
+/* =======================
+   MOBILE ≤768px
+   ======================= */
+@media (max-width: 768px) {
+
+    .application_global_header_container_img_contact,
+    .application_global_img_element_overlay_contact {
+        height: 65vh;
+    }
+
+    .hero_text_container_text_left_contact {
+        margin-top: 18vh;
+        padding: 0 2rem;
+    }
+
+    .fade_text_contact {
+        font-size: 1.8rem;
+        max-width: 100%;
+        line-height: 1.2;
+    }
+
+    .hero_subtitle_contact {
+        font-size: 1rem;
+        margin-top: 16px;
+    }
+}
+
+/* =======================
+   SMALL MOBILE ≤480px
+   ======================= */
+@media (max-width: 480px) {
+
+    .application_global_header_container_img_contact,
+    .application_global_img_element_overlay_contact {
+        height: 60vh;
+    }
+
+    .hero_text_container_text_left_contact {
+        margin-top: 16vh;
+        padding: 0 1.2rem;
+    }
+
+    .fade_text_contact {
+        font-size: 1.55rem;
+    }
+
+    .hero_subtitle_contact {
+        font-size: 0.95rem;
+    }
+}

@@ -17,10 +17,9 @@
 
 
 /* ==========================================
-   FIRE PROTECTION PAGE - DRAMATIC SAFETY DESIGN
+   SECTION FIRE
    ========================================== */
 
-/* Hero Section */
 .fire-hero {
     font-family: 'mainText';
     position: relative;
@@ -513,6 +512,7 @@
             rgba(238, 6, 19, 0.4) 100%);
     width: 100%;
     padding: 4rem;
+    min-height: 75vh;
 }
 
 .fire-vision-content {
@@ -641,4 +641,192 @@
     color: var(--main_overall_color_primary);
     font-style: italic;
     margin-top: 1.5rem !important;
+}
+
+
+/* =========================================================
+   FIRE PAGE – RESPONSIVE SYSTEM
+   ========================================================= */
+
+/* =======================
+   LAPTOP / TABLET ≤1200px
+   ======================= */
+@media (max-width: 1200px) {
+
+    .fire-hero-overlay,
+    .fire-intro,
+    .fire-systems,
+    .fire-services,
+    .fire-cta {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .fire-hero-content h1 {
+        font-size: 3.4rem;
+    }
+
+    .fire-hero-metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fire-intro-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .fire-intro-visual {
+        min-height: 500px;
+    }
+
+}
+
+/* =======================
+   TABLET ≤1024px
+   ======================= */
+@media (max-width: 1024px) {
+
+    .fire-hero {
+        height: auto;
+        min-height: 85vh;
+    }
+
+    .fire-hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .fire-hero-description {
+        font-size: 0.95rem;
+        max-width: 90%;
+    }
+
+    .systems-grid {
+        gap: 3rem;
+    }
+
+    .services-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vision-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =======================
+   MOBILE ≤768px
+   ======================= */
+@media (max-width: 768px) {
+
+    .fire-hero-overlay,
+    .fire-intro,
+    .fire-systems,
+    .fire-services,
+    .fire-vision-overlay,
+    .fire-cta {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .fire-hero-content h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .fire-hero-metrics {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .metric-value {
+        font-size: 2.4rem;
+    }
+
+    .fire-intro-content h2,
+    .systems-header h2,
+    .fire-services-container h2,
+    .fire-vision-content h2,
+    .cta-content h2 {
+        font-size: 2.1rem;
+    }
+
+    .systems-header {
+        margin-bottom: 4rem;
+    }
+
+    .system-item {
+        padding: 2.5rem;
+    }
+
+    .system-number {
+        left: 2.5rem;
+    }
+
+    .services-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-stats {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =======================
+   SMALL MOBILE ≤480px
+   ======================= */
+@media (max-width: 480px) {
+
+    .fire-hero {
+        background-attachment: scroll;
+    }
+
+    .fire-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .fire-hero-description {
+        font-size: 0.9rem;
+    }
+
+    .fire-intro .fire-intro-container .fire-intro-content .intro-primary-text {
+        padding-right: 10px;
+    }
+
+    .fire-intro .fire-intro-container .fire-intro-content .intro-certifications {
+        display: contents;
+    }
+
+    .fire-intro .fire-intro-container .fire-intro-content .intro-certifications .cert-badge {
+        margin-bottom: 20px;
+    }
+
+    .metric-value {
+        font-size: 2rem;
+    }
+
+    .intro-lead {
+        font-size: 0.85rem;
+        padding: 1rem;
+    }
+
+    .system-header {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .system-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .system-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+
 }

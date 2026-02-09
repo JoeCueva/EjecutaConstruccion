@@ -227,6 +227,13 @@
     transition: all 0.3s;
 }
 
+.navigation_menu_list_item_with_dropdown:hover .navigation_submenu_dropdown_panel_container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
 .navigation_menu_list_item_with_dropdown {
     position: relative;
 }
@@ -250,6 +257,14 @@
     border: 2px solid var(--main_overall_color_quinary);
     z-index: 999;
     animation: dropdownFloatingFade 0.35s ease forwards;
+
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(-8px);
+    transition: all 0.25s ease;
+    pointer-events: none;
+
 }
 
 .navigation_submenu_dropdown_panel_container::before {
@@ -405,31 +420,49 @@
 /*****************************************************************************************************/
 
 @media (max-width: 768px) {
+
+    /* ─────────── TOP BAR ─────────── */
+    .top_utility_information_bar_container {
+        display: none;
+    }
+
+    .application_global_header_layout_wrapper {
+        padding-top: 80px;
+    }
+
+    /* ─────────── NAVBAR HEADER ─────────── */
+    .primary_navigation_header_container {
+        padding: 16px 20px;
+        background: rgba(19, 19, 19, 0.85);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .navigation_brand_indetity_image_asset {
+        width: 85px;
+        margin-top: 0;
+    }
+
+    /* ─────────── TOGGLE ─────────── */
     .navigation_menu_toggle_action_container {
         display: block;
         z-index: 1001;
     }
 
-    .navigation_menu_link_element {
-        color: var(--main_overall_color_tertiary);
-    }
-
-    .navigation_menu_list_element {
-        color: var(--main_overall_color_tertiary);
-    }
-
+    /* ─────────── PANEL DESPLEGABLE ─────────── */
     .navigation_menu_interactive_container {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 75%;
         height: 100vh;
         background-color: var(--main_overall_color_quaternary);
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 100px;
         transition: right 0.4s ease-in-out;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        box-shadow: -8px 0 25px rgba(0, 0, 0, 0.25);
         overflow-y: auto;
     }
 
@@ -437,33 +470,36 @@
         right: 0;
     }
 
+    /* ─────────── LISTA PRINCIPAL ─────────── */
     .navigation_menu_list_structure {
         flex-direction: column;
-        gap: 0;
-        width: 90%;
-        margin: 120px 20px 0 20px;
+        width: 100%;
+        margin: 80px 0 0 0;
+        padding: 0;
     }
 
-    .navigation_menu_list_item {
+    .navigation_menu_list_item,
+    .navigation_menu_list_item_with_dropdown {
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .navigation_menu_link_element {
         display: block;
-        padding: 15px 25px;
         width: 100%;
+        padding: 16px 22px;
+        color: var(--main_overall_color_tertiary);
     }
 
-    .navigation_menu_list_item_with_dropdown {
-        position: relative;
-    }
-
+    /* ─────────── ITEM CON SUBMENÚ ─────────── */
     .navigation_menu_list_with_indicator {
         display: flex;
-        padding: 15px 25px;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
+        padding: 16px 22px;
         color: var(--main_overall_color_tertiary);
+        cursor: pointer;
     }
 
     .navigation_menu_list_with_indicator i {
@@ -474,41 +510,47 @@
         transform: rotate(180deg);
     }
 
+    /* ─────────── SUBMENÚ ─────────── */
     .navigation_submenu_dropdown_panel_container {
         position: static;
-        transform: none;
-        box-shadow: none;
-        border-radius: 0;
-        min-width: auto;
+        margin-left: 30vw;
         width: 100%;
-        padding: 0;
-        background-color: var(--main_overall_color_quinary);
         max-height: 0;
-        overflow: hidden;
+        /* overflow: hidden; */
+        background-color: var(--main_overall_color_quinary);
         transition: max-height 0.4s ease;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
         animation: none;
     }
 
     .navigation_menu_list_item_with_dropdown.mobile-submenu-open .navigation_submenu_dropdown_panel_container {
-        max-height: 300px;
+        max-height: 320px;
     }
 
     .navigation_submenu_dropdown_panel_container::before {
         display: none;
     }
 
+    /* ─────────── SUBLINKS (FIX CLAVE) ─────────── */
     .navigation_submenu_link_element {
-        color: var(--main_overall_color_tertiary);
-        padding: 15px 25px 15px 45px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 14px 20px 14px 56px;
         font-size: 14px;
-    }
-
-    .navigation_submenu_link_element:hover {
-        background-color: rgba(0, 0, 0, 0.2);
-        padding-left: 50px;
+        color: var(--main_overall_color_tertiary);
     }
 
     .navigation_submenu_link_element::before {
         left: 28px;
     }
+
+    .navigation_submenu_link_element:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+        padding-left: 60px;
+    }
+
 }

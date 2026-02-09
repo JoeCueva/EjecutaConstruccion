@@ -311,3 +311,143 @@
     font-size: 0.75rem;
     color: var(--main_overall_color_quinary);
 }
+
+
+/* =========================================================
+   ENTERPRISE CONTACT REQUEST – RESPONSIVE SYSTEM
+   ========================================================= */
+
+/* =======================
+   LAPTOP / TABLET ≤1200px
+   ======================= */
+@media (max-width: 1200px) {
+
+    .enterprise_contact_request_page_layout_section {
+        padding: 5rem 0;
+    }
+
+    .enterprise_contact_request_page_inner_wrapper {
+        gap: 3rem;
+        padding: 0 2.5rem;
+    }
+
+    .enterprise_contact_request_primary_heading {
+        font-size: 2.4rem;
+    }
+
+    .enterprise_contact_request_value_argumentation_heading {
+        font-size: 1.6rem;
+    }
+
+    .enterprise_contact_request_form_outer_container {
+        padding: 2.5rem;
+    }
+}
+
+/* =======================
+   TABLET ≤1024px
+   ======================= */
+@media (max-width: 1024px) {
+
+    .enterprise_contact_request_page_layout_section {
+        margin-top: -120px;
+        padding: 4.5rem 0;
+    }
+
+    .enterprise_contact_request_page_inner_wrapper {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .enterprise_contact_request_primary_heading_wrapper,
+    .enterprise_contact_request_introductory_text_wrapper,
+    .enterprise_contact_request_value_argumentation_block {
+        max-width: 100%;
+    }
+
+    .enterprise_contact_request_primary_heading {
+        font-size: 2.2rem;
+    }
+
+    .enterprise_contact_request_form_outer_container {
+        padding: 2.2rem;
+    }
+}
+
+/* =======================
+   MOBILE ≤768px
+   ======================= */
+@media (max-width: 768px) {
+
+    .enterprise_contact_request_page_layout_section {
+        margin-top: -100px;
+        padding: 4rem 0;
+    }
+
+    .enterprise_contact_request_page_inner_wrapper {
+        padding: 0 1.8rem;
+        gap: 3.5rem;
+    }
+
+    .enterprise_contact_request_primary_heading {
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+
+    .enterprise_contact_request_introductory_text {
+        font-size: 0.95rem;
+    }
+
+    .enterprise_contact_request_value_argumentation_heading {
+        font-size: 1.45rem;
+    }
+
+    .enterprise_contact_request_direct_information_block {
+        padding: 1.2rem;
+    }
+
+    .enterprise_contact_request_form_outer_container {
+        padding: 2rem;
+    }
+}
+
+/* =======================
+   SMALL MOBILE ≤480px
+   ======================= */
+@media (max-width: 480px) {
+
+    .enterprise_contact_request_page_layout_section {
+        margin-top: -360px;
+        padding: 3.5rem 0;
+    }
+
+    .enterprise_contact_request_page_inner_wrapper {
+        padding: 0 1.2rem;
+        gap: 3rem;
+    }
+
+    .enterprise_contact_request_primary_heading {
+        font-size: 1.7rem;
+    }
+
+    .enterprise_contact_request_introductory_text {
+        font-size: 0.9rem;
+    }
+
+    .enterprise_contact_request_value_argumentation_heading {
+        font-size: 1.3rem;
+    }
+
+    .enterprise_contact_request_benefits_list_item {
+        font-size: 0.8rem;
+    }
+
+    .enterprise_contact_request_form_outer_container {
+        padding: 1.6rem;
+    }
+
+    .enterprise_contact_request_form_primary_action_button {
+        font-size: 0.9rem;
+        padding: 0.85rem;
+    }
+}

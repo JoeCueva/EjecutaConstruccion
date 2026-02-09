@@ -12,6 +12,10 @@
     src: url('../../assets/fonts/Parkinsans-Medium.ttf');
 }
 
+/*****************************************************************************************************/
+/**************************************** CONTENEDOR PRINCIPAL ***************************************/
+/*****************************************************************************************************/
+
 .footer_global_container {
     position: relative;
     overflow: hidden;
@@ -20,7 +24,7 @@
     width: 100%;
     background-color: var(--main_overall_color_quaternary);
     color: var(--main_overall_color_tertiary);
-    padding: 0 250px;
+    padding: 0;
     font-family: 'mainText';
     z-index: 100;
 }
@@ -52,64 +56,126 @@
 }
 
 /*****************************************************************************************************/
+/************************************** CONTENEDOR DE SECCIONES **************************************/
+/*****************************************************************************************************/
+
+.footer_content_wrapper {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+
+/*****************************************************************************************************/
+/**************************************** DIVISORES DE SECCIÓN ***************************************/
+/*****************************************************************************************************/
+
+.footer_section_divider {
+    position: relative;
+    text-align: center;
+    color: var(--main_overall_color_senary);
+    font-size: 1.0rem;
+    margin: 40px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_section_divider::before,
+.footer_section_divider::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: var(--main_overall_color_tertiary);
+    margin: 0 20px;
+    opacity: 0.4;
+}
+
+/*****************************************************************************************************/
 /******************************** SECCION DESCRIPCION - LI - CONTACTO  *******************************/
 /*****************************************************************************************************/
 
 .footer_top_section_layout {
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    margin-bottom: 20px;
 }
 
-.footer_column_about_section,
-.footer_column_contact_section,
-.footer_column_navigation_section {
-    margin: 30px 50px 30px 50px;
+.footer_column {
+    display: flex;
+    flex-direction: column;
 }
 
-.footer_column_about_section h3,
-.footer_column_contact_section h3,
-.footer_column_navigation_section h3 {
+.footer_column h3 {
     color: var(--main_overall_color_secundary);
-    margin-bottom: 8px;
-    /* font-size: 16px; */
+    margin-bottom: 15px;
     font-size: 1.0rem;
+    text-align: center;
 }
 
-.footer_column_about_section p,
-.footer_column_contact_section p,
-.footer_column_navigation_section a {
-    /* font-size: 13px; */
-    font-size: 0.7rem;
+.footer_column p,
+.footer_column a {
+    font-size: 0.8rem;
     color: var(--main_overall_color_tertiary);
     text-decoration: none;
-    margin-bottom: 6px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.footer_column_about_section p {
+    margin-right: 2vw;
 }
 
 .footer_column_navigation_section ul {
-    padding-left: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_navigation_two_columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 6px;
 }
 
 .footer_column_navigation_section li {
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 
-.footer_column_navigation_section li a:hover {
+.footer_column_navigation_section a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.footer_column_navigation_section a:hover {
     color: var(--main_overall_color_senary);
+}
+
+/* Columna Contacto */
+.footer_column_contact_section p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .footer_contact_schedule_block {
     margin-top: 20px;
-    /* font-size: 13px; */
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.8rem;
     color: var(--main_overall_color_senary);
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
+}
+
+.footer_contact_schedule_block strong {
+    color: var(--main_overall_color_tertiary);
+    margin-bottom: 5px;
 }
 
 /*****************************************************************************************************/
@@ -117,82 +183,24 @@
 /*****************************************************************************************************/
 
 .footer_partners_section {
-    text-align: center;
-}
-
-.footer_partners_title {
-    position: relative;
-    text-align: center;
-    color: var(--main_overall_color_secundary);
-    font-size: 1.0rem;
-    margin: 30px 0;
-}
-
-.footer_partners_title::before,
-.footer_partners_title::after {
-    content: "";
-    display: inline-block;
-    width: 43%;
-    height: 2px;
-    background-color: var(--main_overall_color_tertiary);
-    vertical-align: middle;
-    margin: 0 10px;
-    opacity: 40%;
-}
-
-.footer_partners_titles_secciones {
-    margin-top: 40px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-.footer_partners_titles_secciones::before,
-.footer_partners_titles_secciones::after {
-    content: "";
-    display: inline-block;
-    width: 32%;
-    height: 2px;
-    background-color: var(--main_overall_color_tertiary);
-    vertical-align: middle;
-    margin: 0 10px;
-    opacity: 40%;
-}
-
-.footer_partners_section h3 {
-    color: var(--main_overall_color_tertiary);
-}
-
-.footer_partners_titles {
-    position: relative;
-    text-align: center;
-    color: var(--main_overall_color_tertiary);
-    font-size: 1.0rem;
-    margin: 20px 0;
-}
-
-.footer_partners_titles::before,
-.footer_partners_titles::after {
-    content: "";
-    display: inline-block;
-    width: 28%;
-    height: 2.5px;
-    background-color: var(--main_overall_color_tertiary);
-    vertical-align: middle;
-    margin: 0 10px;
-    opacity: 40%;
+    margin-bottom: 20px;
 }
 
 .footer_partners_logo_grid {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
+    padding: 20px 0;
 }
 
 .footer_partners_logo_grid img {
     max-height: 60px;
+    width: auto;
+    object-fit: contain;
     filter: grayscale(100%) brightness(1.5) contrast(0.4);
+    transition: filter 0.3s ease;
 }
 
 /*****************************************************************************************************/
@@ -211,8 +219,8 @@
 }
 
 .footer_social_icon {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background-color: var(--main_overall_color_primary);
     color: var(--main_overall_color_tertiary);
     border-radius: 50%;
@@ -235,8 +243,8 @@
 /*****************************************************************************************************/
 
 .footer_logo_center_block {
-    margin: 5px 0 20px;
-    padding: 10px 0;
+    margin: 30px 0 20px;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
 }
@@ -255,8 +263,8 @@
     text-align: center;
     font-size: 12px;
     color: var(--main_overall_color_senary);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /*****************************************************************************************************/
@@ -267,10 +275,78 @@
     text-align: center;
     font-size: 12px;
     color: var(--main_overall_color_senary);
-    margin-top: 5px;
+    padding-bottom: 20px;
 }
 
 .footer_creator_signature_block span {
     color: var(--main_overall_color_secundary);
     font-weight: bold;
+}
+
+/*****************************************************************************************************/
+/****************************************** RESPONSIVE DESIGN ****************************************/
+/*****************************************************************************************************/
+
+@media (max-width: 1400px) {
+    .footer_content_wrapper {
+        padding: 0 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer_content_wrapper {
+        padding: 0 80px;
+    }
+
+    .footer_top_section_layout {
+        gap: 30px;
+    }
+
+    .footer_navigation_two_columns {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_content_wrapper {
+        padding: 0 40px;
+    }
+
+    .footer_top_section_layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer_navigation_two_columns {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_partners_logo_grid {
+        gap: 25px;
+    }
+
+    .footer_partners_logo_grid img {
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_content_wrapper {
+        padding: 0 20px;
+    }
+
+    .footer_section_divider {
+        font-size: 0.9rem;
+    }
+
+    .footer_section_divider::before,
+    .footer_section_divider::after {
+        margin: 0 10px;
+    }
+
+    .footer_social_icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
 }

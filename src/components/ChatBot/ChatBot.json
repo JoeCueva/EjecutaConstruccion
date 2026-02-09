@@ -1,28 +1,140 @@
 {
-  "welcome": "Hola, soy el asistente virtual de EJECUTA. ¿En qué puedo ayudarte hoy?",
-  "options": [
+  "company": {
+    "name": "EJECUTA",
+    "slogan": "Ingeniería ejecutada con precisión",
+    "whatsapp": "+51930628528",
+    "email": "contacto@ejecuta.net.pe",
+    "telefono": "+51 930 628 528",
+    "ubicacion": "Lima, Perú",
+    "horario": "Lunes a Viernes, 7:00 AM - 6:00 PM"
+  },
+  "welcome": {
+    "greeting": "¡Bienvenido a EJECUTA! 👋",
+    "message": "Soy tu asistente virtual. Estoy aquí para resolver todas tus dudas sobre nuestros servicios de ingeniería.",
+    "cta": "Selecciona un tema de la izquierda o escribe tu consulta directamente."
+  },
+  "categories": [
     {
-      "label": "¿Qué es EJECUTA?",
-      "value": "about"
+      "id": "empresa",
+      "icon": "building",
+      "title": "La Empresa",
+      "subtitle": "Quiénes somos",
+      "responses": {
+        "main": "EJECUTA nace a partir de la necesidad de ejecutar instalaciones eléctricas con mayor control técnico y responsabilidad en obra, brindando soluciones integrales y sostenibles para diversos proyectos.",
+        "experiencia": "Con más de ocho años de experiencia en el mercado nacional, nos hemos comprometido con la excelencia, la innovación y la seguridad en cada fase de nuestro trabajo, consolidándonos como un referente en el sector eléctrico peruano.",
+        "compromiso": "Nuestra trayectoria está marcada por la satisfacción de nuestros clientes, quienes encuentran en nosotros un aliado estratégico para la continuidad de sus operaciones.",
+        "mision": "Nuestra misión es garantizar instalaciones que operen sin fallas, con planificación rigurosa y control permanente.",
+        "vision": "Ser la empresa referente en ejecución de instalaciones técnicas en el Perú, reconocida por calidad y cumplimiento.",
+        "valores": "Trabajamos con: Precisión técnica, Compromiso de entrega, Transparencia operativa, Mejora continua."
+      }
     },
     {
-      "label": "Nuestros servicios",
-      "value": "services"
+      "id": "servicios",
+      "icon": "cogs",
+      "title": "Servicios",
+      "subtitle": "Qué ejecutamos",
+      "responses": {
+        "main": "Ejecutamos 4 líneas de instalaciones técnicas bajo normativa y con garantía post-obra:",
+        "electrico": "INSTALACIONES ELÉCTRICAS: Acometidas, tableros, distribución, iluminación, fuerza, sistemas de emergencia y puesta a tierra. Todo calculado y certificado.",
+        "sanitario": "INSTALACIONES SANITARIAS: Agua fría, caliente, desagüe, ventilación, sistemas de bombeo y tratamiento. Integrado y probado.",
+        "incendio": "SISTEMAS CONTRA INCENDIO: Rociadores automáticos, detección, alarmas, gabinetes, hidrantes y bombas jockey. Certificado NFPA.",
+        "comunicaciones": "INSTALACIONES DE COMUNICACIONES: Redes estructuradas, fibra óptica, CCTV, telefonía, data centers y cableado certificado."
+      }
     },
     {
-      "label": "Solicitar cotización",
-      "value": "quote"
+      "id": "metodologia",
+      "icon": "clipboard-list",
+      "title": "Metodología",
+      "subtitle": "Cómo trabajamos",
+      "responses": {
+        "main": "Trabajamos con el Método EJECUTA: 5 fases controladas que garantizan cero improvisación.",
+        "fase1": "INGENIERÍA: Diseño técnico, cálculos, planos de detalle y especificaciones. Todo definido antes de comprar un cable.",
+        "fase2": "LOGÍSTICA: Compra certificada de materiales, control de inventario y programación de entregas sincronizadas.",
+        "fase3": "EJECUCIÓN: Instalación supervisada en campo con personal técnico capacitado y control de avance diario.",
+        "fase4": "PRUEBAS: Ensayos técnicos certificados (megado, manómetros, flujo, continuidad) antes de entregar.",
+        "fase5": "ENTREGA: Dossier de calidad completo con planos as-built, protocolos, manuales y capacitación al cliente."
+      }
     },
     {
-      "label": "Contacto",
-      "value": "contact"
+      "id": "proyectos",
+      "icon": "hard-hat",
+      "title": "Proyectos",
+      "subtitle": "Qué hemos ejecutado",
+      "responses": {
+        "main": "Hemos ejecutado instalaciones en diversos sectores: comercial, industrial, educativo, salud y residencial.",
+        "tipos": "Edificios corporativos, centros comerciales, plantas industriales, colegios, clínicas, hoteles y conjuntos residenciales.",
+        "alcance": "Desde obras pequeñas de 50m² hasta proyectos complejos de +10,000m². Siempre con el mismo control de calidad.",
+        "garantia": "Todos nuestros proyectos incluyen garantía post-obra de 12 meses y mantenimiento programado opcional.",
+        "sectores": "Trabajamos con empresas privadas, entidades públicas, compañías mineras, industriales, comerciales y residenciales."
+      }
+    },
+    {
+      "id": "diferencial",
+      "icon": "star",
+      "title": "Diferencial",
+      "subtitle": "Por qué elegirnos",
+      "responses": {
+        "main": "No somos un contratista tradicional. Somos ingenieros ejecutando instalaciones con criterio técnico propio.",
+        "ventaja1": "Supervisión técnica permanente en obra (no subcontratamos responsabilidad)",
+        "ventaja2": "Control de calidad real (ensayos documentados, no solo checklist)",
+        "ventaja3": "Planificación detallada antes de ejecutar (cero improvisación en campo)",
+        "ventaja4": "Garantía post-obra respaldada con dossier técnico completo",
+        "ventaja5": "Cumplimiento de plazos por fases controladas (sin sorpresas de última hora)"
+      }
+    },
+    {
+      "id": "contacto",
+      "icon": "phone-alt",
+      "title": "Contacto",
+      "subtitle": "Hablemos",
+      "responses": {
+        "main": "¿Tienes un proyecto en mente? Conversemos para darte una solución técnica precisa.",
+        "telefono": "Teléfono: +51 987 654 321",
+        "email": "Email: contacto@ejecuta.net.pe",
+        "ubicacion": "Ubicación: Lima, Perú",
+        "horario": "Horario: Lunes a Viernes, 7:00 AM - 6:00 PM",
+        "whatsapp": "Para una atención más rápida, escríbenos por WhatsApp y un ingeniero te responderá."
+      }
     }
   ],
-  "responses": {
-    "about": "EJECUTA es una empresa de ingeniería especializada en instalaciones técnicas, enfocada en calidad, seguridad y cumplimiento de plazos.",
-    "services": "Brindamos: Instalaciones Eléctricas (IIEE), Instalaciones Sanitarias (IISS), Sistemas Contra Incendios (ACI) y Comunicaciones.",
-    "quote": "Completa el formulario y nuestro equipo se comunicará contigo.",
-    "contact": "Puedes contactarnos directamente vía WhatsApp al +51 987 654 321 o a través de nuestra web."
+  "autoResponses": {
+    "precio": "Los costos dependen del alcance, complejidad y plazo del proyecto. Para una cotización precisa, necesitamos conocer los detalles técnicos. ¿Te conecto con un ingeniero?",
+    "tiempo": "Los plazos se definen en la fase de ingeniería según el alcance. Proyectos pequeños: 2-4 semanas. Proyectos medianos: 1-3 meses. Proyectos grandes: 3-6+ meses.",
+    "garantia": "Todos nuestros proyectos incluyen garantía técnica de 12 meses post-entrega. Además entregamos dossier completo con protocolos de pruebas y planos as-built. Contamos con soporte técnico especializado para asegurar el correcto funcionamiento del sistema instalado.",
+    "materiales": "Trabajamos con materiales certificados de marcas reconocidas: BTicino, Eaton, Schneider Electric, Matusita, Pavco, entre otros. Todo con certificados de calidad.",
+    "equipo": "Contamos con ingenieros electricistas, sanitarios y especialistas en sistemas contra incendio. Todo nuestro personal técnico está capacitado y certificado.",
+    "zona": "Ejecutamos proyectos en todo Lima y provincias. Para obras fuera de Lima, coordinamos logística y movilización según el alcance.",
+    "ubicacion": "Nos ubicamos en Lima, Perú. Atendemos proyectos en todo el país. Nuestro horario de atención es de Lunes a Viernes, de 7:00 AM a 6:00 PM.",
+    "horario": "Nuestro horario de atención es de Lunes a Viernes, de 7:00 AM a 6:00 PM. Para consultas urgentes, puedes escribirnos por WhatsApp al +51 987 654 321.",
+    "contacto": "Puedes contactarnos por: Teléfono: +51 987 654 321, Email: contacto@ejecuta.net.pe, WhatsApp: +51 987 654 321. Estamos en Lima, Perú.",
+    "inicio": "Para iniciar un proyecto, agendamos una reunión técnica donde revisamos planos, alcances y requerimientos. Luego elaboramos una propuesta técnico-económica detallada.",
+    "planos": "Sí, podemos ejecutar obras basadas en planos ya existentes o diseñar nuevos planos de acuerdo con las necesidades del proyecto. Nuestro equipo de ingeniería se adapta a tus requerimientos.",
+    "inspeccion": "Sí, ofrecemos visitas técnicas para evaluar la situación del cliente y determinar la solución más adecuada según el tipo de infraestructura. Esto nos permite darte una propuesta precisa.",
+    "integral": "Ambos. Podemos ejecutar proyectos integrales (todas las especialidades) o intervenir por especialidad específica (eléctrica, sanitaria, contra incendio, comunicaciones), adaptándonos a la etapa y alcance de la obra.",
+    "plazos": "Trabajamos con planificación rigurosa, cronogramas claros y control permanente de avance. Esto reduce improvisaciones y retrabajos, garantizando el cumplimiento de los plazos establecidos.",
+    "seguridad": "Aplicamos protocolos de seguridad estrictos, uso obligatorio de EPP (Equipos de Protección Personal) y supervisión constante para proteger al personal y la infraestructura durante toda la ejecución.",
+    "normas": "Sí. Ejecutamos conforme a normativas vigentes peruanas e internacionales, reglamentos técnicos y buenas prácticas de ingeniería. Cumplimos con el CNE (Código Nacional de Electricidad), RNE y NFPA.",
+    "integracion": "Sí. Evaluamos el estado de la obra y nos integramos de manera ordenada, asegurando continuidad y control técnico sin afectar el avance del proyecto.",
+    "sectores": "Sí. Contamos con experiencia atendiendo instituciones públicas, compañías mineras, industriales, comerciales y residenciales. Nos adaptamos a los requerimientos de cada sector.",
+    "empresa": "EJECUTA nace a partir de la necesidad de ejecutar instalaciones eléctricas con mayor control técnico y responsabilidad en obra. Con más de ocho años de experiencia, nos consolidamos como referente en el sector eléctrico peruano.",
+    "servicios": "Ejecutamos 4 líneas: Instalaciones Eléctricas (acometidas, tableros, iluminación, fuerza), Sanitarias (agua, desagüe, bombeo), Contra Incendio (rociadores, detección, alarmas) y Comunicaciones (redes, fibra óptica, CCTV).",
+    "proyectos": "Hemos ejecutado instalaciones en edificios corporativos, centros comerciales, plantas industriales, colegios, clínicas, hoteles y conjuntos residenciales. Desde 50m² hasta +10,000m².",
+    "valores": "Nuestros valores son: Precisión técnica (ejecutamos con criterio propio), Compromiso de entrega (cumplimos lo prometido), Transparencia operativa (comunicación clara) y Mejora continua (aprendemos de cada proyecto).",
+    "mision": "Nuestra misión es garantizar instalaciones que operen sin fallas, con planificación rigurosa y control permanente en cada fase del proyecto.",
+    "vision": "Ser la empresa referente en ejecución de instalaciones técnicas en el Perú, reconocida por calidad, cumplimiento y excelencia en el servicio.",
+    "diferencial": "No somos un contratista tradicional. Somos ingenieros ejecutando con criterio técnico propio, supervisión permanente, control de calidad real y garantía respaldada con dossier completo.",
+    "default": "Entiendo tu consulta. Para darte una respuesta más precisa, te recomiendo hablar directamente con nuestro equipo técnico. ¿Te conecto por WhatsApp?"
   },
-  "whatsapp": "+930666328"
+  "quickActions": [
+    "¿Trabajan con planos existentes?",
+    "¿Pueden hacer inspección previa?",
+    "¿Proyectos integrales o por especialidad?",
+    "¿Cómo aseguran cumplimiento de plazos?",
+    "¿Cómo gestionan la seguridad?",
+    "¿Trabajan bajo normas técnicas?",
+    "¿Se integran a proyectos iniciados?",
+    "¿Trabajan con sector público y privado?",
+    "¿Ofrecen garantía en sus trabajos?",
+    "Solicitar cotización"
+  ]
 }

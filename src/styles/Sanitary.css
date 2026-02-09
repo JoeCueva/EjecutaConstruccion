@@ -756,6 +756,7 @@
             rgba(0, 120, 180, 0.2) 100%);
     width: 100%;
     padding: 3rem;
+    min-height: 75vh;
 }
 
 .sanitary-vision-content {
@@ -876,4 +877,266 @@
 .cta-button:hover {
     background: var(--main_overall_color_primary);
     transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   SANITARY – RESPONSIVE SYSTEM (ALL DEVICES)
+   ========================================================= */
+
+/* =======================
+   DESKTOP SMALL ≤1200px
+   ======================= */
+@media (max-width: 1200px) {
+
+    .sanitary-hero-content h1 {
+        font-size: 3.4rem;
+    }
+
+    .sanitary-intro-container {
+        gap: 4rem;
+    }
+
+    .systems-grid {
+        gap: 2.5rem;
+    }
+
+    .service-detail-header h4 {
+        font-size: 1.4rem;
+    }
+
+}
+
+/* =======================
+   TABLET ≤1024px
+   ======================= */
+@media (max-width: 1024px) {
+
+    /* HERO */
+    .sanitary-hero {
+        height: auto;
+        min-height: 80vh;
+    }
+
+    .sanitary-hero-overlay {
+        padding: 5rem 3rem;
+    }
+
+    .sanitary-hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .sanitary-hero-description {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .sanitary-hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    /* INTRO */
+    .sanitary-intro {
+        padding: 4rem 3rem;
+    }
+
+    .sanitary-intro-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .sanitary-intro-image {
+        min-height: 420px;
+    }
+
+    .image-badge {
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .intro-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    /* SYSTEMS */
+    .sanitary-systems {
+        padding: 4rem 3rem;
+    }
+
+    .systems-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* SERVICES DETAIL */
+    .sanitary-services {
+        padding: 4rem 3rem;
+    }
+
+    .sanitary-services-container h2 {
+        font-size: 2.4rem;
+    }
+
+    .service-detail-content {
+        padding: 2rem;
+    }
+
+    /* TABS */
+    .sanitary-section {
+        padding: 4rem 3rem;
+    }
+
+    .tabs-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-card {
+        grid-template-columns: 60px 1fr;
+    }
+
+    /* PROCESS */
+    .sanitary-process {
+        padding: 4rem 3rem;
+    }
+
+    .process-flow {
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 0;
+    }
+
+    /* VISION */
+    .sanitary-vision-overlay {
+        padding: 5rem 3rem;
+    }
+
+    .vision-features {
+        grid-template-columns: 1fr;
+    }
+
+    /* CTA */
+    .sanitary-cta {
+        padding: 4rem 3rem;
+    }
+}
+
+/* =======================
+   MOBILE ≤768px
+   ======================= */
+@media (max-width: 768px) {
+
+    /* HERO */
+    .sanitary-hero-overlay {
+        padding: 4rem 2rem;
+    }
+
+    .sanitary-hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .sanitary-hero-stats {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    /* INTRO */
+    .sanitary-intro {
+        padding: 3rem 2rem;
+    }
+
+    .sanitary-intro-content h2 {
+        font-size: 2rem;
+    }
+
+    /* SYSTEMS */
+    .system-card {
+        padding: 2rem;
+    }
+
+    /* SERVICES */
+    .service-detail-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .service-number {
+        font-size: 3rem;
+    }
+
+    /* TABS */
+    .tabs-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        grid-template-columns: 1fr;
+    }
+
+    .big-number {
+        font-size: 2.5rem;
+    }
+
+    .accent-line {
+        display: none;
+    }
+
+    /* PROCESS */
+    .process-flow {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .flow-step,
+    .flow-connector {
+        grid-column: span 1;
+    }
+
+    .flow-connector {
+        display: none;
+    }
+
+    /* VISION */
+    .sanitary-vision-content h2 {
+        font-size: 2.1rem;
+    }
+
+    .sanitary-vision-content p {
+        font-size: 1rem;
+    }
+
+    /* CTA */
+    .cta-box h2 {
+        font-size: 2rem;
+    }
+}
+
+/* =======================
+   SMALL MOBILE ≤480px
+   ======================= */
+@media (max-width: 480px) {
+
+    .sanitary-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .stat-number {
+        font-size: 2.4rem;
+    }
+
+    .sanitary-services-container h2 {
+        font-size: 2.1rem;
+    }
+
+    .container .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .card-main-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
 }
